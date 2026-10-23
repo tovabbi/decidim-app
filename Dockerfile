@@ -18,7 +18,7 @@ ENV RAILS_ENV=production \
     RAILS_LOG_TO_STDOUT=true
 
 COPY Gemfile Gemfile.lock ./
-RUN bundle config set without 'development test' && bundle install
+RUN bundle install
 
 COPY . .
 RUN npm install
