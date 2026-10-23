@@ -28,4 +28,4 @@ RUN SECRET_KEY_BASE=dummy DATABASE_URL=postgres://u:p@localhost/db \
     bundle exec rails shakapacker:compile
 
 EXPOSE 3000
-CMD ["bundle", "exec", "puma", "-C", "config/puma.rb"]
+CMD ["sh", "-c", "if [ \"$PROCESS_TYPE\" = \"sidekiq\" ]; then exec bundle exec sidekiq -C config/sidekiq.yml; else exec bundle exec puma -C config/puma.rb; fi"]
