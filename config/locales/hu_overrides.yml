@@ -1,0 +1,9 @@
+hu:
+  editor:
+    extensions:
+      link:
+        targets:
+          default: "Alapértelmezett (ugyanaz a lap)"
+    toolbar:
+      textStyle:
+        heading: "Címsor %level%"
