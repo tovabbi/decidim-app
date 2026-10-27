@@ -1,0 +1,518 @@
+hu:
+  decidim:
+    proposals:
+      actions:
+        cancel_coauthor_invitation: "Társszerzői meghívás visszavonása"
+        cancel_coauthor_invitation_confirm: "Biztosan vissza szeretnéd vonni a társszerzői meghívást?"
+        delete_proposal_state_confirm: "Biztosan törölni szeretnéd ezt az állapotot?"
+        destroy: "Állapot törlése"
+        edit_proposal_state: "Állapot szerkesztése"
+        mark_as_coauthor: "Megjelölés társszerzőként"
+        mark_as_coauthor_confirm: "Biztosan társszerzőként szeretnéd megjelölni ezt a felhasználót? A címzett értesítést kap, amelyben elfogadhatja vagy elutasíthatja a meghívást."
+        new_proposal_state: "Új állapot"
+      admin_log:
+        evaluation_assignment:
+          create: "%{user_name} hozzárendelte a(z) %{resource_name} javaslatot egy értékelőhöz"
+          delete: "%{user_name} eltávolított egy értékelőt a(z) %{proposal_title} javaslatról"
+        proposal:
+          create: "%{user_name} létrehozta a(z) %{resource_name} javaslatot %{merged_count} javaslat összevonásából a(z) %{space_name} térben"
+          restore: "%{user_name} visszaállította a(z) %{resource_name} javaslatot a(z) %{space_name} térben"
+          soft_delete: "%{user_name} a kukába helyezte a(z) %{resource_name} javaslatot a(z) %{space_name} térben"
+      creation:
+        imported_text: "Ebből lett ez a javaslat"
+        merged_text: "Ezekből lett ez a javaslat"
+        splitted_text: "Ebből lett ez a javaslat"
+        text: "Ez a javaslat létrejött"
+      exit_modal:
+        cancel: "Mégse"
+        exit: "Folytatás"
+        message: "Még %{number} szavazatot kell leadnod különböző javaslatokra, hogy a szavazataidat figyelembe vegyük."
+        title: "Ne feledd, még %{number} szavazatod van hátra"
+      forms:
+        errors:
+          device_not_supported: "Az eszközöd nem támogatja a helymeghatározást. Kérlek, add meg a címet kézzel."
+          no_device_location: "Sajnos nem tudtuk meghatározni a tartózkodási helyedet. Kérlek, add meg a címet kézzel."
+        locating: "Helymeghatározás…"
+        use_my_location: "Jelenlegi helyem használata"
+      invite_coauthors:
+        cancel:
+          error: "Probléma történt a társszerzői meghívás visszavonása közben."
+          success: "A társszerzői meghívást sikeresen visszavontad."
+        create:
+          error: "Probléma történt a társszerző meghívása közben."
+          success: "%{author_name} meghívása társszerzőként sikeres volt."
+        destroy:
+          error: "Probléma történt a meghívás elutasítása közben."
+          success: "A meghívást elutasítottad."
+        update:
+          error: "Probléma történt a meghívás elfogadása közben."
+          success: "A meghívást elfogadtad."
+      last_activity:
+        new_proposal: "Új javaslat:"
+        proposal_updated: "Frissített javaslat:"
+      models:
+        proposal:
+          fields:
+            evaluator: "Értékelő"
+            evaluators: "Értékelők"
+            taxonomies: "Taxonómiák"
+        proposal_state:
+          css_class: "CSS-osztály"
+          title: "Állapot"
+      new:
+        limit_reached: "Nem hozhatsz létre új javaslatot, mert túllépted a korlátot."
+      proposal_votes:
+        create:
+          error: "Probléma történt a javaslatra való szavazás közben."
+      proposals:
+        dynamic_map_instructions:
+          description: "A koordináták az „Előnézet” gombra kattintva frissülnek. A cím azonban nem változik."
+          instructions: "Áthelyezheted a pontot a térképen."
+        edit:
+          add_attachments: "Mellékletek hozzáadása"
+          attachment_legend: "Dokumentum vagy kép hozzáadása"
+          edit_attachments: "Mellékletek szerkesztése"
+        edit_draft:
+          title: "Javaslattervezet szerkesztése"
+        edit_form_fields:
+          marker_added: "Jelölő hozzáadva a térképhez."
+        filters:
+          taxonomy_filters: "Szűrők"
+        index:
+          grid_mode: "Rácsnézet"
+          list_mode: "Listanézet"
+          see_all: "Összes javaslat megtekintése"
+          text_banner: "A szerzőik által visszavont javaslatok listáját nézed. %{go_back_link}."
+        new:
+          title: "Új javaslat létrehozása"
+        orders:
+          most_liked: "Legtöbbet kedvelt"
+        participatory_texts:
+          view_index:
+            document_index: "Dokumentum tartalomjegyzéke"
+        placeholder:
+          address: "Példa utca 12., 1051 Budapest"
+        preview:
+          announcement_body: "A javaslatod piszkozatként el lett mentve. Közzé kell tenni, hogy megjelenjen az oldalon."
+          announcement_title: "A javaslatod még nincs közzétéve"
+        proposals:
+          empty: "Még nincsenek javaslatok."
+          empty_filters: "Nincs a feltételeknek megfelelő javaslat."
+        show:
+          edit_proposal: "Szerkesztés"
+          withdraw_btn_hint: "Visszavonhatod a javaslatodat, ha meggondolod magad, feltéve, hogy még nem kapott szavazatot. A javaslat nem törlődik, a visszavont javaslatok listáján fog megjelenni."
+          withdraw_confirmation_html: "Biztosan vissza szeretnéd vonni ezt a javaslatot?<br><br><strong>Ez a művelet nem vonható vissza!</strong>"
+          withdraw_proposal: "Visszavonás"
+        update:
+          title: "Javaslat módosítása"
+        vote_button:
+          already_voted: "Szavaztál"
+          already_voted_hover: "Szavazat visszavonása"
+          votes_blocked: "Szavazás"
+        votes_count:
+          count:
+            one: "Szavazat"
+            other: "Szavazat"
+        voting_rules:
+          already_vote:
+            description: "Ne feledd, még %{number} támogatást kell adnod különböző javaslatokra, hogy a támogatásaidat figyelembe vegyük."
+            see_other_proposals: "Más javaslatok megtekintése"
+            title: "Még %{number} támogatásod van hátra"
+          can_accumulate_votes_beyond_threshold:
+            description: "Minden javaslat több mint %{limit} szavazatot is összegyűjthet"
+          minimum_votes_per_user:
+            description: "Legalább %{votes} támogatást kell megosztanod különböző javaslatok között, hogy a támogatásaidat figyelembe vegyük."
+          success: "A szavazataidat sikeresen elfogadtuk"
+          threshold_per_proposal:
+            description: "Ahhoz, hogy egy javaslat érvényes legyen, el kell érnie a(z) %{limit} szavazatot."
+          title: "Részvételi szabályok"
+          vote_limit:
+            votes: "Még %{number} szavazat van hátra"
+        wizard_aside:
+          back_from_step_1: "Vissza a javaslatokhoz"
+          back_from_step_2: "Vissza a szerkesztéshez"
+        wizard_steps:
+          current_step: "Jelenlegi lépés"
+          step_2: "Javaslatod közzététele"
+      proposals_picker:
+        no_proposals: "Nincs a keresési feltételeknek megfelelő javaslat, vagy egyáltalán nincsenek javaslatok."
+      withdraw:
+        errors:
+          has_votes: "Ez a javaslat nem vonható vissza, mert már kapott szavazatot."
+    surveys:
+      actions:
+        confirm_destroy: "Biztosan törölni szeretnéd ezt?"
+        destroy: "Törlés"
+        edit: "Szerkesztés"
+        manage_questions: "Kérdések"
+        new_survey: "Új kérdőív"
+        preview: "Előnézet"
+        responses: "Válaszok"
+        responses_alert: "A közzétételkor történő válaszok törlése aktív ennél a kérdőívnél. Jelenleg %{responses_count} válasz van, amelyek törlődnek, ha folytatod."
+        title: "Műveletek"
+      admin_log:
+        survey:
+          create: "%{user_name} létrehozta a(z) %{resource_name} kérdőívet a(z) %{space_name} térben"
+          delete: "%{user_name} törölte a(z) %{resource_name} kérdőívet a(z) %{space_name} térben"
+          publish: "%{user_name} közzétette a(z) %{resource_name} kérdőívet a(z) %{space_name} térben"
+          unpublish: "%{user_name} visszavonta a(z) %{resource_name} kérdőív közzétételét a(z) %{space_name} térben"
+          update: "%{user_name} módosította a(z) %{resource_name} kérdőívet a(z) %{space_name} térben"
+      directory:
+        surveys:
+          index:
+            surveys: "Kérdőívek"
+      last_activity:
+        new_survey: "Új kérdőív:"
+      models:
+        survey:
+          fields:
+            published: "Közzétéve"
+            questions: "Kérdések"
+            responses: "Válaszok"
+            status: "Állapot"
+            title: "Cím"
+          published:
+            published: "Közzétéve"
+            unpublished: "Nincs közzétéve"
+          status:
+            closed: "Lezárva"
+            open: "Nyitott"
+      survey_confirmation_mailer:
+        confirmation:
+          body: "Sikeresen kitöltötted a(z) %{questionnaire_title} kérdőívet a(z) %{participatory_space} térben"
+          subject: "A(z) %{questionnaire_title} kérdőív kitöltésének visszaigazolása"
+        export_name: "Kérdőívválaszok"
+      surveys:
+        count:
+          surveys_count:
+            one: "%{count} kérdőív"
+            other: "%{count} kérdőív"
+        filters:
+          all: "Mind"
+          state_values:
+            closed: "Lezárva"
+            open: "Nyitott"
+        no_surveys_warning: "Nincs a keresési feltételeknek megfelelő kérdőív, vagy nincs nyitott kérdőív."
+        response:
+          invalid: "Probléma történt a kérdőív kitöltése közben."
+          spam_detected: "Probléma történt az űrlap kitöltése közben. Talán túl gyors voltál, megpróbálnád újra?"
+          success: "A kérdőívet sikeresen kitöltötted."
+        show:
+          closed: "Lezárva"
+          open: "Nyitott"
+          questions: "kérdés"
+    verifications:
+      admin_log:
+        csv_datum:
+          create: "%{user_name} új népességnyilvántartási rekordot hozott létre a(z) %{resource_email} e-mail-címmel"
+          delete: "%{user_name} törölte a(z) %{resource_email} e-mail-címhez tartozó népességnyilvántartási rekordot"
+          import: "%{user_name} importált %{imported_count} népességnyilvántartási rekordot"
+          update: "%{user_name} módosította a(z) %{resource_email} e-mail-címhez tartozó népességnyilvántartási rekordot"
+      authorizations:
+        new:
+          tos_agreement: "Személyazonosságod igazolásával elfogadod a következőt: %{link}."
+        onboarding_pending:
+          completed_verifications: "Sikeresen engedélyt kaptál, most már tudsz itt cselekedni: %{action} – %{resource_name}"
+          granted_verifications: "Jóváhagyott igazolások"
+          onboarding_message_html: "Majdnem készen állsz a következőre: %{action} – <strong>%{resource_title}</strong> %{resource_name}. Kérlek, igazold a fiókodat az alábbi engedélyezések elvégzésével."
+          pending_admin_approval_verifications: "Adminisztrátori jóváhagyásra váró igazolások"
+          pending_verifications: "Függőben lévő igazolások"
+          unauthorized: "Nincs jogosultságod a következőre: %{action} – ebben az erőforrásban"
+      errors:
+        invalid_emails: "A következő e-mail-címek érvénytelenek: %{invalid_emails}."
+        no_emails: "A fájlnak e-mail-címeket kell tartalmaznia"
+        wrong_number_columns: "%{expected} oszlopot vártunk, de %{actual} oszlopot találtunk."
+      id_documents:
+        identification_number: "Azonosítószám"
+      sms:
+        authorizations:
+          destroy:
+            success: "A hitelesítő kód sikeresen visszaállítva. Kérlek, add meg újra a telefonszámodat."
+  activemodel:
+    attributes:
+      assembly:
+        duplicate_categories: "Kategóriák másolása"
+        duplicate_components: "Komponensek másolása"
+        duplicate_features: "Funkciók másolása"
+        has_members: "Ennek a térnek vannak tagjai"
+        internal_organisation: "Belső szervezet"
+      attachment:
+        documents: "Dokumentumok"
+        image: "Kép"
+        photos: "Fotók"
+      component:
+        taxonomy_filters: "Taxonómiaszűrők"
+      content_block_attachment:
+        background_image: "Háttérkép"
+        main_image: "Főkép"
+      editor_image:
+        file: "Fájl"
+      import:
+        file: "Fájl"
+      taxonomy:
+        name: "Taxonómia neve"
+      taxonomy_filter:
+        internal_name: "Belső címke"
+        name: "Címke"
+        root_taxonomy_id: "Ebből a taxonómiából"
+        space_filter: "Szűrőként elérhető itt"
+      user:
+        avatar: "Profilkép"
+      questionnaire_question:
+        max_characters: "Karakterkorlát (0, ha nincs korlát)"
+      response:
+        body: "Válasz"
+        choices: "Lehetőségek"
+        selected_choices: "Kiválasztott lehetőségek"
+        add_attachments: "Mellékletek hozzáadása"
+      meeting:
+        end_time: "Befejezés ideje"
+        iframe_access_level: "Iframe-hozzáférési szint"
+        iframe_embed_type: "Iframe beágyazási típusa"
+        iframe_embed_type_html: 'Csak néhány szolgáltatás engedi a „Beágyazás a találkozó oldalába” vagy a „Megnyitás az élő esemény oldalán” lehetőséget. Vedd figyelembe, hogy a „Beágyazás a találkozó oldalába” opció mobilon, a képernyő eltérő méretei miatt, valójában „Megnyitás az élő esemény oldalán” módon fog működni.'
+        registration_type: "Regisztráció típusa"
+        reserved_slots: "Foglalt helyek ehhez a találkozóhoz"
+        start_time: "Kezdés ideje"
+      meeting_agenda:
+        title: "Cím"
+        visible: "Látható"
+      meeting_agenda_items:
+        description: "Leírás"
+        duration: "Időtartam"
+        title: "Cím"
+      meeting_registration_invite:
+        email: "E-mail"
+        name: "Név"
+      validate_registration_code:
+        code: "Kód"
+      participatory_process:
+        duplicate_categories: "Kategóriák másolása"
+        duplicate_components: "Komponensek másolása"
+        duplicate_landing_page_blocks: "Nyitóoldal-blokkok másolása"
+        duplicate_steps: "Szakaszok másolása"
+        has_members: "Ennek a térnek vannak tagjai"
+      collaborative_draft:
+        scope_id: "Hatókör"
+      evaluation_assignment:
+        admin_log:
+          evaluator_role_id: "Értékelő neve"
+      import_participatory_text:
+        document: "Dokumentum"
+      proposal:
+        decidim_proposals_proposal_state_id: "Állapot"
+        latitude: "Szélesség"
+        longitude: "Hosszúság"
+      proposal_answer:
+        cost: "Költség"
+        cost_report: "Költségjelentés"
+        execution_period: "Megvalósítási időszak"
+      proposal_state:
+        announcement_title: "Válasz címsora"
+        bg_color: "Háttérszín"
+        colors:
+          blue: "Kék"
+          gray: "Szürke"
+          green: "Zöld"
+          orange: "Narancssárga"
+          pink: "Rózsaszín"
+          purple: "Lila"
+          red: "Piros"
+          yellow: "Sárga"
+        text_color: "Szövegszín"
+      proposals_file_import:
+        file: "Fájl"
+      proposals_import:
+        keep_answers: "Állapotok és válaszok megtartása"
+      authorization:
+        verification_attachment: "Igazolás melléklete"
+      census_data:
+        file: "Fájl"
+      confirmation:
+        verification_code: "Igazoló kód"
+      mobile_phone:
+        mobile_phone_number: "Mobiltelefonszám"
+    errors:
+      models:
+        assembly:
+          attributes:
+            document:
+              empty: "A dokumentum üres"
+              invalid_json: "A dokumentum nem érvényes JSON"
+        user:
+          attributes:
+            nickname:
+              format: "A becenévnek kisbetűsnek kell lennie, és nem tartalmazhat szóközt"
+        questionnaire:
+          request_invalid: "Probléma történt a kérés feldolgozása közben. Kérlek, próbáld újra."
+        response:
+          attributes:
+            add_documents:
+              needs_to_be_reattached: "Újra csatolni kell"
+            body:
+              too_long: "túl hosszú"
+            choices:
+              missing: "nincsenek teljesen kitöltve"
+              too_many: "Legfeljebb %{count} lehetőséget választhatsz."
+        meeting:
+          attributes:
+            iframe_embed_type:
+              not_embeddable: "Ez az URL nem ágyazható be a találkozó vagy az élő esemény oldalába."
+            online_meeting_url:
+              url_format: "Érvényes URL-nek kell lennie"
+        meeting_agenda:
+          attributes:
+            base:
+              too_many_minutes: "A tételek időtartama %{count} perccel meghaladja a találkozó időtartamát."
+              too_many_minutes_child: 'A(z) „%{parent_title}” napirendi pont alpontjainak időtartama %{count} perccel meghaladja a szülőpont időtartamát.'
+        meeting_registration_invite:
+          attributes:
+            email:
+              already_invited: "Ezt az e-mail-fiókot már meghívták."
+        participatory_process:
+          attributes:
+            document:
+              empty: "A dokumentum üres"
+              invalid_json: "A dokumentum nem érvényes JSON"
+        participatory_text:
+          attributes:
+            document:
+              allowed_file_content_types: 'Érvénytelen dokumentumtípus. Csak a következő kiterjesztésű fájlok engedélyezettek: %{types}'
+        proposal:
+          attributes:
+            add_attachments:
+              needs_to_be_reattached: "Újra csatolni kell"
+        proposals_merge:
+          attributes:
+            base:
+              not_official: "Nem hivatalosak"
+              voted: "Szavazatot vagy kedvelést kaptak"
+        proposals_split:
+          attributes:
+            base:
+              not_official: "Nem hivatalosak"
+              voted: "Szavazatot vagy kedvelést kaptak"
+    models:
+      decidim/resource_liked_event: "Az erőforrás kedvelve lett"
+      decidim/proposals/admin/update_proposal_taxonomies_event: "A javaslat taxonómiái megváltoztak"
+      decidim/proposals/liking_enabled_event: "A javaslatok kedvelése engedélyezve"
+  layouts:
+    decidim:
+      assemblies:
+        metadata:
+          children_item:
+            one: "%{count} gyűlés"
+            other: "%{count} gyűlés"
+      footer:
+        current_organization_img: "%{organization} (vissza a főoldalra)"
+        help: "Súgó"
+        open_data: "Nyílt adatok"
+        sign_up: "Fiók létrehozása"
+        social_media: "Közösségi média"
+        terms_of_service: "Felhasználási feltételek"
+      header:
+        back: "Vissza"
+        close: "Bezárás"
+        confirm_close_ephemeral_session: "Ha elnavigálsz, az ideiglenes munkameneted bezárul. Az eddigi előrehaladásod és tevékenységed viszont megmarad. Ha befejezted a tevékenységedet, kattints az OK gombra."
+        confirm_title_close_ephemeral_session: "Mielőtt elhagyod az oldalt…"
+        mobile_account_greeting: "Szia, %{user_name}!"
+      impersonation_warning:
+        expire_time_html: 'A munkameneted <b><span data-impersonation-warning-target="minutes">%{minutes}</span> perc</b> múlva lejár.'
+      navigation:
+        aria_label: 'Navigációs menü: %{title}'
+      user_menu:
+        unread_conversations: "Olvasatlan beszélgetéseid vannak"
+        unread_notifications: "Olvasatlan értesítéseid vannak"
+      participatory_process_navigation:
+        member_menu_item: "Tagok"
+  date:
+    formats:
+      order: "y-m-d"
+      separator: "."
+  datetime:
+    distance_in_words:
+      less_than_x_minutes:
+        one: "kevesebb mint egy perc"
+        other: "kevesebb mint %{count} perc"
+      less_than_x_seconds:
+        one: "kevesebb mint 1 másodperc"
+        other: "kevesebb mint %{count} másodperc"
+      short:
+        about_x_days: "%{count} n"
+        about_x_hours: "%{count} ó"
+        about_x_minutes: "%{count} p"
+        about_x_months: "%{count} hó"
+        about_x_years: "%{count} é"
+        almost_x_years: "%{count} é"
+        half_a_minute: "1 p"
+        less_than_x_minutes: "%{count} p"
+        less_than_x_seconds: "%{count} mp"
+        over_x_years: "%{count} é"
+        x_days: "%{count} n"
+        x_hours: "%{count} ó"
+        x_minutes: "%{count} p"
+        x_months: "%{count} hó"
+        x_seconds: "%{count} mp"
+        x_years: "%{count} é"
+      x_minutes:
+        one: "1 perc"
+        other: "%{count} perc"
+      x_months:
+        one: "1 hónap"
+        other: "%{count} hónap"
+      x_seconds:
+        one: "1 másodperc"
+        other: "%{count} másodperc"
+    widget:
+      label:
+        date: "Dátum kiválasztása: %{label}"
+        time: "Időpont kiválasztása: %{label}"
+      picker:
+        date_button: "Naptár megnyitása ehhez: %{label}"
+        time_button: "Időválasztó megnyitása ehhez: %{label}"
+  devise:
+    failure:
+      csrf_token: "Nem tudtuk ellenőrizni a kérésedet. Kérlek, próbáld újra."
+      unauthenticated: "A folytatás előtt be kell jelentkezned, vagy létre kell hoznod egy fiókot."
+    invitations:
+      edit:
+        subtitle_no_password: "Ha elfogadod a meghívást, kérlek, add meg a becenevedet."
+      updated: "A meghívást sikeresen elfogadtad. Most már be vagy jelentkezve."
+      updated_not_active: "A meghívást sikeresen elfogadtad."
+    mailer:
+      invitation_instructions:
+        invited_you_as_member: "%{invited_by} meghívott a(z) %{application} tagjává. Az alábbi hivatkozáson keresztül fogadhatod el."
+        someone_invited_you_as_member: "Valaki meghívott a(z) %{application} tagjává, az alábbi hivatkozáson keresztül fogadhatod el."
+      invite_member:
+        subject: "Meghívtak egy zárt részvételi folyamatba a(z) %{organization} oldalon"
+    omniauth_callbacks:
+      add_tos_errors: "A fiók létrehozásához el kell fogadni a felhasználási feltételeket."
+    passwords:
+      edit:
+        old_password_help: "A fiókodat érintő módosítások megerősítéséhez add meg a jelenlegi jelszavadat."
+        password_help: "Legalább %{minimum_characters} karakter, legalább 5 különböző karaktert kell tartalmaznia, nem lehet túl gyakori (pl. 123456), és különböznie kell a nevedtől, a becenevedtől, az e-mail-címedtől és a szervezet hosztnevétől."
+        password_help_admin: "Legalább %{minimum_characters} karakter, legalább 5 különböző karaktert kell tartalmaznia, nem lehet túl gyakori (pl. 123456), különböznie kell a nevedtől, a becenevedtől, az e-mail-címedtől, a szervezet hosztnevétől, és különböznie kell a korábbi jelszavaidtól."
+    registrations:
+      new:
+        sign_up: "Fiók létrehozása"
+    shared:
+      links:
+        sign_up: "Fiók létrehozása"
+  errors:
+    messages:
+      confirmation: "nem egyezik ezzel: %{attribute}"
+      cycle_detected: "egy hatókör szülője nem lehet a saját leszármazottja"
+      empty: "nem lehet üres"
+      not_found: "nem található. Létrehoztál korábban fiókot?"
+      not_saved:
+        one: "Hiba történt a kérésed feldolgozása közben:"
+        other: "Több hiba történt a kérésed feldolgozása közben:"
+      too_short: "túl rövid (kevesebb mint %{count} karakter)"
+      url_format: "Ez az URL helytelen formátumú"
+  number:
+    currency:
+      format:
+        format: "%n %u"
+        format_html: "%n <span>%u</span>"
+  time:
+    formats:
+      tooltip: "%Y-%m-%d %H:%M %Z (GMT %:z)"

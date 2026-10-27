@@ -1,0 +1,338 @@
+hu:
+  decidim:
+    forms:
+      attachment_link:
+        explanation: "Útmutató a mellékletként csatolt hivatkozásokhoz"
+        help_messages:
+        - "Csak helyes URL-formátum fogadható el."
+        - "Kérlek, vedd figyelembe, hogy a hivatkozásoknak nyilvánosnak kell lenniük, hogy minden résztvevő hozzáférhessen."
+      errors:
+        error: "Hiba van ebben a mezőben."
+        response:
+          body: "A szöveg nem lehet üres"
+      file_help:
+        file:
+          explanation: "Útmutató a fájlhoz:"
+          message_2: "Ha kép, lehetőleg fekvő tájolású legyen, és ne legyen rajta szöveg. A platform körbevágja a képet."
+        image:
+          explanation: "Útmutató a képhez:"
+          message_1: "Lehetőleg fekvő tájolású kép, amelyen nincs szöveg."
+          message_2: "A szolgáltatás körbevágja a képet."
+        import_file:
+          explanation: "Útmutató az importfájlhoz:"
+          message_1: "Az exportálási funkcióval letöltött JSON-dokumentumnak kell lennie."
+      file_validation:
+        allowed_file_extensions: "Engedélyezett fájlkiterjesztések: %{extensions}"
+        max_file_dimension: "Maximális fájlméret (képpontban): %{resolution}"
+      files:
+        extension_allowlist: "Elfogadott formátumok: %{extensions}"
+      upload:
+        labels:
+          validation_error: "Ellenőrzési hiba! Ellenőrizd, hogy a fájl kiterjesztése és mérete engedélyezett-e."
+      admin_log:
+        question:
+          publish_responses: "%{user_name} közzétette a(z) %{resource_name} kérdés válaszait a(z) %{space_name} térben"
+          unpublish_responses: "%{user_name} visszavonta a(z) %{resource_name} kérdés válaszainak közzétételét a(z) %{space_name} térben"
+        questionnaire:
+          update: "%{user_name} módosította a(z) %{resource_name} kérdőívet"
+      images:
+        dimensions: "%{width} x %{height} px"
+        processors:
+          resize_and_pad: "A kép átméretezésre és kitöltésre kerül erre a méretre: %{dimensions}."
+      question_types:
+        files: "Fájlok"
+        long_response: "Hosszú válasz"
+        matrix_multiple: "Mátrix (több választható)"
+        matrix_single: "Mátrix (egy választható)"
+        short_response: "Rövid válasz"
+      questionnaire_response_presenter:
+        download_attachment: "Melléklet letöltése"
+      questionnaires:
+        response:
+          invalid: "Probléma történt az űrlap megválaszolása közben."
+          max_choices_alert: "Túl sok lehetőséget választottál ki"
+          spam_detected: "Probléma történt az űrlap megválaszolása közben. Lehet, hogy túl gyors voltál, kérlek, próbáld újra."
+          success: "Az űrlapot sikeresen megválaszoltad."
+        show:
+          current_step: "%{step}. lépés"
+          empty: "Ehhez az űrlaphoz még nincsenek kérdések beállítva."
+          of_total_steps: "(összesen %{total_steps})"
+          questionnaire_closed:
+            body: "Az űrlap le van zárva, nem lehet megválaszolni."
+          questionnaire_for_members:
+            body: "Az űrlap csak a tagok számára érhető el"
+            title: "Az űrlap le van zárva"
+          questionnaire_js_disabled:
+            body: "Az űrlap néhány funkciója le lesz tiltva. A jobb élmény érdekében kérlek, engedélyezd a JavaScriptet a böngésződben."
+            title: "A JavaScript le van tiltva"
+          questionnaire_not_published:
+            body: "Ez az űrlap még nincs közzétéve."
+          questionnaire_responded:
+            body: "Ezt az űrlapot már megválaszoltad."
+            title: "Már megválaszoltad"
+          questionnaire_responded_edit:
+            body: "Ezt az űrlapot már megválaszoltad. %{link}"
+            edit: "Válaszaid szerkesztése"
+          response_questionnaire:
+            already_have_an_account?: "Már van fiókod?"
+            are_you_new?: "Új felhasználó vagy?"
+            sign_in_description: "Jelentkezz be a kérdőív kitöltéséhez"
+            sign_up_description: "Hozz létre egy résztvevői fiókot a kérdőív kitöltéséhez"
+            title: "Az űrlap megválaszolása"
+      step_navigation:
+        show:
+          are_you_sure_edit_guest: "Ha később szerkeszteni szeretnéd a válaszaidat, be kell jelentkezned vagy létre kell hoznod egy fiókot."
+          are_you_sure_no_edit: "Ez a művelet nem vonható vissza, és nem fogod tudni szerkeszteni a válaszaidat. Biztos vagy benne?"
+          back: "Vissza"
+          disallowed: "Nem szerkesztheted a válaszaidat."
+      user_responses_serializer:
+        body: "Válasz"
+        completion: "Kitöltöttség"
+        created_at: "Válasz ideje"
+        id: "Válasz azonosítója"
+        ip_hash: "IP-kivonat"
+        question: "Kérdés"
+        registered: "Regisztrált"
+        session_token: "Felhasználói azonosító"
+        unregistered: "Nem regisztrált"
+        user_status: "Felhasználó állapota"
+      meetings:
+        attendees_count_help_text: "Ne felejtsd el megadni a találkozó összes résztvevőjének számát, legyen az személyes, online vagy hibrid részvétel."
+    help:
+      main_topic:
+        title: "Általános"
+    last_activities:
+      name: "Legutóbbi tevékenységek"
+      no_activities_warning: "Ehhez a tevékenységtípushoz nincsenek megjeleníthető bejegyzések."
+    like_buttons_cell:
+      already_liked: "Kedvelés visszavonása"
+      like: "Kedvelés"
+    likes_list:
+      liked_by:
+        one: "Kedvelte: %{visible}"
+        other: "Kedvelte: %{visible} és %{others}"
+      others: "%{count} további"
+      title: "Kedvelők"
+      you: "te"
+    linked_resource_from:
+      included_in: "Szerepel itt:"
+    log:
+      base_presenter:
+        publish: "%{user_name} közzétette: %{resource_name}"
+        update_filters: "%{user_name} módosította a(z) %{resource_name} szűrőit"
+        update_filters_with_space: "%{user_name} módosította a(z) %{resource_name} szűrőit a(z) %{space_name} térben"
+      value_types:
+        access_mode_presenter:
+          access_modes:
+            open: "Nyitott"
+            restricted: "Korlátozott"
+            transparent: "Átlátható"
+          not_found: "A(z) %{id} hozzáférési mód nem található"
+        taxonomy_presenter:
+          not_found: 'A taxonómia nem található az adatbázisban (azonosító: %{id})'
+    machine_translations:
+      automatic: "automatikus fordítás: %{locale_name}"
+    map:
+      dynamic:
+        zoom_in: "Nagyítás"
+        zoom_out: "Kicsinyítés"
+    messaging:
+      conversations:
+        add_conversation_users:
+          participant_with_disabled_message_reception: "Ez a résztvevő nem szeretne privát üzeneteket kapni."
+          participants:
+            title: "Résztvevők"
+    metadata:
+      progress:
+        finished: 'Befejezve: %{end_date}'
+        remaining: "%{time_distance} van hátra"
+    newsletter_mailer:
+      newsletter:
+        see_on_website: 'Nem látod helyesen ezt az e-mailt? Nézd meg a <a href="%{link}" target="_blank" class="see-on-website">weboldalon</a>.'
+    newsletters:
+      unsubscribe:
+        check_subscription_html: 'Ha újra szeretnél hírleveleket kapni, bármikor újra engedélyezheted a feliratkozást a <a href="%{link}" target="_blank">beállítások oldalon</a>.'
+        subscription_preferences: "Frissítettük a feliratkozási beállításaidat, és mostantól nem kapsz hírleveleket a(z) %{organization_name} szervezettől."
+        unsubscribe: "Leiratkozás a hírlevélről"
+    newsletters_opt_in_mailer:
+      notify:
+        body_1: 'A személyes adatok kezelése és védelme egyre fontosabb mindannyiunk számára. A 2018. május 25-i általános adatvédelmi rendelettel (GDPR) mindenki jobban ellenőrizheti a személyes adatait. Ezért szükségünk van a „rendben” válaszodra ahhoz, hogy továbbra is küldhessünk neked a(z) %{organization_name} tevékenységeiről szóló releváns információkat.'
+    notifications:
+      action_error: "Probléma történt az értesítési beállítások módosítása közben."
+      show:
+        deleted: "A tartalmat a szerző törölte."
+        moderated: "A tartalmat a moderálás elrejtette."
+        not_available: "Hoppá, ez az értesítés egy olyan elemhez tartozik, amely már nem elérhető. Elvetheted."
+    notifications_digest_mailer:
+      header:
+        real_time: "Valós idejű"
+      intro:
+        real_time: "Ez egy értesítés az általad követett tevékenységről:"
+    notifications_settings:
+      show:
+        assigned_to_proposal: "E-mailt szeretnék kapni, ha valaki kiértékelésre hozzám rendel egy javaslatot"
+        evaluators: "Értékelők"
+        push_notifications_unsupported_browser: "A böngésződ nem támogatott."
+    onboarding_action_message:
+      click_link: "Kattints ide"
+      cta_html: '<a href="%{path}">%{link_text}</a>, hogy %{action} itt: %{resource_name} <strong>%{resource_title}</strong>'
+      ephemeral_authorized_message: "Sikeresen hitelesítettünk.<br/>Vendégmunkamenetet indítottál, mostantól részt vehetsz."
+      expired_authorization_active_title: "A hitelesítésed lejárt."
+      finish_authorization_process: "Befejezheted a hitelesítési folyamatot"
+      incomplete_authorization_active_title: "A hitelesítésedet nem fejeztük be az összes szükséges információval."
+      pending_authorization_active_message: "A művelet folytatásához kérlek, töltsd ki az űrlapot."
+      pending_authorization_active_title: "Igazolnunk kell a személyazonosságodat."
+      pending_ephemeral_authorization: "A folytatáshoz kérlek, igazold a személyazonosságodat."
+    pad_iframe:
+      explanation: "Használd ezt a jegyzetfüzetet, hogy közösen jegyzeteljetek a találkozó alatt, így később könnyebb megírni a jegyzőkönyvet."
+    pages:
+      home:
+        footer_sub_hero:
+          footer_sub_hero_body_html: "Építsünk együtt egy nyitottabb, átláthatóbb és együttműködőbb társadalmat.<br /> Csatlakozz, vegyél részt és dönts."
+          register: "Fiók létrehozása"
+        statistics:
+          headline: "Statisztikák"
+        sub_hero:
+          register: "Fiók létrehozása"
+          register_title: "Fiók létrehozása"
+      terms_of_service:
+        accept:
+          error: "Probléma történt a felhasználási feltételek elfogadása közben."
+          success: "Remek! Elfogadtad a felhasználási feltételeket."
+        required_review:
+          alert: "Frissítettük a felhasználási feltételeinket, kérlek, tekintsd át őket."
+          body: "Kérlek, szánj egy percet a felhasználási feltételek frissítéseinek áttekintésére. Ellenkező esetben nem fogod tudni használni a platformot."
+          title: "Kötelező: tekintsd át a felhasználási feltételek frissítéseit"
+      show:
+        empty: "Ezen az oldalon még nincs tartalom."
+    participants_account_mailer:
+      inactivity_notification:
+        body_html: |
+          <p>Nyilvántartásunk szerint %{organization_name} fiókot hoztál létre <strong>%{date_account_creation}</strong> napon, és <strong>%{date_last_connection}</strong> óta nem voltál aktív.</p>
+          <p>A magánszférád védelme érdekében a fiókodat <strong>%{days} nap múlva</strong> automatikusan töröljük.</p>
+          <p>Ha meg szeretnéd tartani a(z) %{organization_name} fiókodat, egyszerűen %{login_url} ezen idő lejárta előtt, és a fiókod megmarad.<p>
+        greetings_html: |
+          Üdvözlettel,<br>
+          %{organization_name}
+        hello_html: "Kedves <strong>%{username}</strong>!"
+        log_in: "jelentkezz be"
+        never_logged_in: "soha nem jelentkezett be"
+        subject: "Figyelmeztetés inaktív fiókról"
+    participatory_space:
+      labels:
+        reference: "A tér azonosítója"
+        restricted: "Korlátozott tér"
+        transparent: "Átlátható tér"
+      pages:
+        user_profile:
+          member_of:
+            member_of: "Tagja ennek:"
+    participatory_spaces:
+      show:
+        restricted_space: "Ez egy korlátozott tér. Csak a tagok és az adminisztrátorok láthatják és vehetnek részt benne."
+        transparent_space: "Ez egy átlátható tér. Bárki megtekintheti a tartalmát, de csak a tagok és az adminisztrátorok vehetnek részt benne."
+    passwords:
+      update:
+        error: "Probléma történt a jelszó módosítása közben."
+        success: "A jelszó sikeresen módosítva."
+    profile:
+      inaccessible_message: "Ez a profil a felhasználási feltételek megsértése miatt nem érhető el!"
+    qr:
+      show:
+        scan: "Olvasd be a QR-kódot"
+        title: "QR-kód ehhez: %{resource_title}"
+    reported_mailer:
+      hidden_automatically:
+        content: "Bejelentett tartalom"
+        details: "Részletek"
+        hello: "Kedves %{name}!"
+        manage_moderations: "Moderálások kezelése"
+        participatory_space: "Részvételi tér"
+        reason: "Ok"
+        report_html: '<p>A következő <a href="%{url}">tartalmat</a> automatikusan elrejtettük.</p>'
+        subject: "Egy erőforrást automatikusan elrejtettünk"
+      hidden_manually:
+        content: "Bejelentett tartalom"
+        details: "Részletek"
+        hello: "Kedves %{name}!"
+        manage_moderations: "Moderálások kezelése"
+        participatory_space: "Részvételi tér"
+        reason: "Ok"
+        report_html: '<p>A következő <a href="%{url}">tartalmat</a> %{moderator} elrejtette.</p>'
+        subject: "Egy erőforrást %{moderator} elrejtett"
+    reports:
+      create:
+        error: "Probléma történt a bejelentés létrehozása közben. Kérlek, próbáld újra."
+      hide:
+        success: "Ez az erőforrás el lett rejtve."
+      parent_hidden:
+        report_details: "A szülő erőforrás el lett rejtve"
+    resource:
+      controls_label: "Erőforrás-vezérlők"
+    resource_autocomplete:
+      help: "Írj a javaslatok kereséséhez"
+    resource_likes:
+      create:
+        error: "Probléma történt a kedvelés közben."
+    search:
+      results_found_for_term: '%{count} találat a keresésre: „%{term}”'
+    searches:
+      filters:
+        resource: "%{label} itt: %{collection}"
+      filters_small_view:
+        filter_and_search: "Szűrés és keresés"
+    share_widget:
+      download: "Letöltés"
+      print: "Plakát nyomtatása"
+      qr_code: "QR-kód"
+    shared:
+      confirm_unload: "Ez az oldal mentetlen módosításokat tartalmaz. Biztosan el szeretnéd hagyni az oldalt?"
+      embed:
+        title: "Beágyazott videótartalom"
+      flag_user_modal:
+        description: "Mi a kifogásolható ebben a résztvevőben?"
+        title: "Kifogásolható résztvevő bejelentése"
+      login_modal:
+        sign_up: "Fiók létrehozása"
+      share_modal:
+        copy_share_link_cta: "Vagy másold ki a hivatkozást"
+    tags:
+      filter_results_for_taxonomy: 'Találatok szűrése: %{resource}'
+    taxonomies:
+      prompt: "Kérlek, válassz egy lehetőséget"
+    user_group_mailer:
+      notify_deprecation_to_member:
+        body_1: 'Fontos változásról szeretnénk tájékoztatni azzal a felhasználói csoporttal kapcsolatban, amelynek tagja vagy: <strong>%{group_name}</strong>.'
+        body_2: 'A szervezetek élményének egyszerűsítése érdekében a „Felhasználói csoportok” funkció megszűnik. A felhasználói csoportod profilját most átalakítottuk egy hagyományos résztvevői profillá.'
+        greeting: "Kedves %{name}!"
+        instructions_1: "Ha hozzáférsz ahhoz az e-mail-fiókhoz, kérlek, nézd meg a postaládádat az útmutatásért."
+        instructions_2: "Ha nem, egy hozzáféréssel rendelkező kollégádnak kell megadnia a jelszót, és megosztania veletek a belépési adatokat."
+        instructions_intro: "A csoport tagjai mostantól közös belépési adatokkal (e-mail-cím és jelszó) férnek hozzá ehhez a profilhoz. Elküldtük a(z) %{email} címre az új jelszó beállításához szükséges útmutatást."
+        instructions_title: "<strong>Mit jelent ez számodra</strong>"
+        subject: "Fontos változás a csoportod profiljával kapcsolatban"
+      notify_deprecation_to_owner:
+        body_1: "Fontos változásról szeretnénk tájékoztatni a(z) %{organization_name} szervezetnél lévő csoportprofilodat illetően."
+        body_2: 'A hozzátok hasonló szervezetek élményének egyszerűsítése és javítása érdekében a „Felhasználói csoportok” funkció megszűnik. A csoportodat (<strong>%{name}</strong>) hagyományos fiókká alakítottuk át.'
+        body_3: "Ahhoz, hogy továbbra is hozzáférj a fiókodhoz és megoszthasd a hozzáférést, be kell állítanod egy jelszót. Ezután a belépési adatokat (e-mail-cím és jelszó) bárkivel megoszthatod."
+        greeting: "Kedves %{name}!"
+        instructions_1: "Kattints az alábbi hivatkozásra a jelszó beállításához:"
+        instructions_2: "Oszd meg a belépési adatokat (e-mail-cím: %{email} és az új jelszó) a kollégáiddal."
+        instructions_title: "<strong>Mit kell tenned</strong>"
+        set_password: "Jelszó beállítása"
+        subject: "Fontos változás a csoportod profiljával kapcsolatban"
+      notify_user_group_patched:
+        body_1_html: "Fontos változásról szeretnénk tájékoztatni a(z) %{organization_name} szervezetnél lévő csoportprofilodat illetően."
+        body_2_html: 'A hozzátok hasonló szervezetek élményének egyszerűsítése és javítása érdekében a „Felhasználói csoportok” funkció megszűnik. A csoportodat (<strong>%{name}</strong>) hagyományos fiókká alakítottuk át.'
+        body_3_html: "Ahhoz, hogy továbbra is hozzáférj a fiókodhoz és megoszthasd a hozzáférést, új e-mail-címet és jelszót kell beállítanod. Kérlek, vedd figyelembe, hogy a csoportod minden tagja megkapja ezt az e-mailt. A folyamatos hozzáférés érdekében belső egyeztetéssel meg kell állapodnotok a közös belépési adatokban (e-mail-cím és jelszó), amelyet mindenki használni fog."
+        greeting: "Kedves %{name}!"
+        instructions_1_html: 'Használd a következő ideiglenes belépési adatokat a bejelentkezéshez: <br><br> Felhasználónév: <strong>%{email}</strong> <br> Jelszó: <strong>%{password}</strong><br><br>'
+        instructions_2_html: "Állíts be új e-mail-címet és jelszót."
+        instructions_3_html: "Oszd meg a kiválasztott belépési adatokat a kollégáiddal, hogy az egész csoport továbbra is hozzáférhessen a fiókhoz."
+        instructions_title_html: "<strong>Mit kell tenned</strong>"
+        subject: "Fontos változás a csoportod profiljával kapcsolatban"
+    user_update_mailer:
+      notify:
+        body_1: "Azért küldjük ezt az üzenetet, hogy tájékoztassunk a fiókod módosításáról."
+        body_2: "Ha nem te végezted a módosítást, kérlek, jelentkezz be a fiókodba, és változtasd meg a jelszavadat. Ha nem tudsz bejelentkezni, kérlek, vedd fel a kapcsolatot a platform támogatásával."
+        main_body: 'A következő adatok módosultak: %{updates}.'
+        update_fields: "%{updates} és %{last_update}"

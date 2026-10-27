@@ -1,0 +1,462 @@
+hu:
+  decidim:
+    debates:
+      actions:
+        confirm_delete_debate: "Biztosan törölni szeretnéd ezt a vitát?"
+        deleted_debate_info: "A törölt vitát a kukából lehet visszaállítani."
+        new: "Új vita"
+        view_deleted_debates: "Törölt viták megtekintése"
+      admin_log:
+        debate:
+          restore: "%{user_name} visszaállította a(z) %{resource_name} vitát a(z) %{space_name} térben"
+          soft_delete: "%{user_name} a kukába helyezte a(z) %{resource_name} vitát a(z) %{space_name} térben"
+      content_blocks:
+        highlighted_debates:
+          name: "Viták"
+          see_all: "Összes vita megtekintése"
+      debates:
+        close_debate_modal:
+          cancel: "Mégse"
+        debates:
+          empty: "Még nincsenek viták."
+          empty_filters: "Nincs a feltételeknek megfelelő vita."
+        filters:
+          state_values:
+            ongoing: "Folyamatban"
+        new:
+          title: "Új vita létrehozása"
+        orders:
+          most_commented: "Legtöbbet kommentelt"
+        show:
+          close_debate: "Lezárás"
+          closed: "Lezárva"
+          edit_debate: "Szerkesztés"
+          not_started: "Még nem kezdődött el"
+          ongoing: "Folyamatban"
+          open_ended: "Határidő nélküli"
+      models:
+        debate:
+          fields:
+            end: "Vége"
+            start: "Kezdete"
+            taxonomies: "Taxonómiák"
+    gamification:
+      badges:
+        attended_meetings:
+          unearned_another: "Ez a résztvevő még nem vett részt egyetlen találkozón sem."
+          unearned_own: "Még nem vettél részt egyetlen találkozón sem."
+        proposal_votes:
+          description: "Ezt a jelvényt akkor kapod, ha mások javaslataira szavazol."
+          description_another: "Ez a résztvevő %{score} javaslatra szavazott."
+          description_own: "%{score} javaslatra szavaztál."
+          name: "Javaslatszavazatok"
+          next_level_in: "Szavazz még %{score} javaslatra, hogy elérd a következő szintet!"
+          unearned_another: "Ez a résztvevő még egyetlen javaslatra sem szavazott."
+          unearned_own: "Még egyetlen javaslatra sem szavaztál."
+    meetings:
+      actions:
+        confirm_delete_meeting: "Biztosan törölni szeretnéd ezt a találkozót?"
+        confirm_unpublish_meeting: "Biztosan vissza szeretnéd vonni ennek a találkozónak a közzétételét?"
+        deleted_meetings_info: "A törölt találkozókat a kukából lehet visszaállítani."
+        mark_as_attendee: "Megjelölés résztvevőként"
+        new_meeting: "Új találkozó"
+        view_deleted_meetings: "Törölt találkozók megtekintése"
+      admin_log:
+        meeting:
+          restore: "%{user_name} visszaállította a(z) %{resource_name} találkozót a(z) %{space_name} térben"
+          soft_delete: "%{user_name} a kukába helyezte a(z) %{resource_name} találkozót a(z) %{space_name} térben"
+      calendar:
+        meeting_to_event:
+          read_more: "További információ erről a találkozóról"
+      calendar_modal:
+        copy_calendar_url_explanation: "Kérlek, vedd figyelembe, hogy a találkozók egy kiválasztott részét exportálod, mert aktív szűrők vannak beállítva. Ha az összeset exportálni szeretnéd, először állítsd vissza az összes szűrőt."
+      close_meeting_reminder_mailer:
+        close_meeting_reminder:
+          subject: 'Mostantól lezárhatod a(z) „%{meeting_title}” találkozót egy beszámolóval'
+      iframe_embed_type:
+        open_in_live_event_page: "Megnyitás az élő esemény oldalán"
+      last_activity:
+        meeting_updated: "Frissített találkozó:"
+        new_meeting: "Új találkozó:"
+      meeting:
+        not_allowed: "Nincs jogosultságod megtekinteni ezt a találkozót."
+      meetings:
+        count:
+          meetings_count:
+            one: "%{count} találkozó"
+            other: "%{count} találkozó"
+        filters:
+          origin: "Eredet"
+        form:
+          disclaimer: 'Felhívás: külső regisztrációs rendszer használatával tudomásul veszed, hogy a(z) %{organization} szervezői nem felelnek a felhasználók által a külső szolgáltatásnak megadott adatokért.'
+          iframe_embed_type_html: 'Csak néhány szolgáltatás engedi a találkozó vagy élő esemény oldalába való beágyazást a következő domainekről: %{domains}'
+          location_help: 'Helyszín: a felhasználóknak szóló üzenet arról, hol találkoztok'
+          location_hints_help: 'Helyszíni tudnivalók: további információ. Például az épület emelete személyes találkozó esetén, vagy a találkozó jelszava korlátozott hozzáférésű online találkozó esetén.'
+          online_meeting_url_help: 'Hivatkozás: lehetővé teszi, hogy a résztvevők közvetlenül csatlakozzanak a találkozóhoz'
+          registration_url_help: 'Hivatkozás: lehetővé teszi, hogy a résztvevők átlépjenek a regisztrációhoz használt külső szolgáltatásra'
+          select_a_meeting_type: "Kérlek, válassz találkozótípust"
+          select_a_registration_type: "Kérlek, válassz regisztrációtípust"
+          select_an_iframe_access_level: "Kérlek, válassz iframe-hozzáférési szintet"
+        index:
+          click_here: "Összes találkozó megtekintése"
+          new_meeting: "Új találkozó"
+          see_all: "Összes találkozó megtekintése"
+          see_all_withdrawn: "Az összes visszavont találkozó megtekintése"
+          text_banner: "A szerzőik által visszavont találkozók listáját nézed. %{go_back_link}."
+        meeting:
+          close_meeting: "Lezárás"
+          edit_close_meeting: "Találkozó beszámolójának szerkesztése"
+          edit_meeting: "Szerkesztés"
+          join_meeting: "Csatlakozás a találkozóhoz"
+          reply_poll: "Szavazás megválaszolása"
+          view_poll: "Szavazás megtekintése"
+        meetings:
+          no_meetings_warning: "Nincs a keresési feltételeknek megfelelő találkozó, vagy nincs ütemezett találkozó."
+        new:
+          back: "Vissza"
+          title: "Új találkozó létrehozása"
+        show:
+          join_waitlist: "Felvétel a várólistára"
+          leave: "Regisztráció lemondása"
+          leave_confirmation: "Biztosan le szeretnéd mondani a regisztrációdat erre a találkozóra?"
+          leave_waitlist: "Kilépés a várólistáról"
+          leave_waitlist_confirmation: "Biztosan ki szeretnél lépni ennek a találkozónak a várólistájáról?"
+          link_available_soon: "A hivatkozás hamarosan elérhető lesz"
+          link_closed: "A találkozóhoz csatlakozó hivatkozás néhány perccel a kezdés előtt lesz elérhető"
+          live_event: "Ez a találkozó éppen zajlik"
+          micro_camera_permissions_warning: "Az alábbi gombra kattintva mikrofon- és/vagy kamerahasználati engedélyt fogunk kérni, és csatlakozni fogsz a videókonferenciához"
+          pending_address: "A helyszínt hamarosan közzétesszük."
+          redirect_notice: 'Ez a találkozó egy másik tér része, ezért átirányítottunk ide: %{current_space_name}. <br>Ha szeretnéd, visszamehetsz ide: <a href="%{previous_space_url}">%{previous_space_name}</a>.'
+          registration_and_qr_code: "Regisztráció és QR-kód"
+          registration_code: 'Regisztrációs kód: %{code}'
+          registration_code_help_text: "A regisztrációd és a QR-kódod"
+          visit_finished: "Lezajlott találkozó megtekintése"
+          waitlist:
+            description: "Ha felszabadul egy hely, automatikusan feldolgozzuk a regisztrációdat, és e-mailben értesítünk."
+            status: "A várólistán vagy"
+          withdraw_btn_hint: "Visszavonhatod a találkozódat, ha meggondolod magad. A találkozó nem törlődik, a visszavont találkozók listáján fog megjelenni."
+          withdraw_confirmation_html: "Biztosan vissza szeretnéd vonni ezt a találkozót?<br><br><strong>Ez a művelet nem vonható vissza!</strong>"
+          withdraw_meeting: "Visszavonás"
+        update:
+          invalid: "Probléma történt a találkozó módosítása közben."
+          success: "A találkozót sikeresen módosítottad."
+      models:
+        meeting:
+          fields:
+            official_meeting: "Hivatalos találkozó"
+            published: "Közzétéve"
+            taxonomies: "Taxonómiák"
+        registration:
+          actions: "Műveletek"
+          fields:
+            email: "E-mail"
+            name: "Név"
+            status: "Állapot"
+          status:
+            attended: "Részt vett"
+            not_attended: "Nem vett részt"
+      polls:
+        questions:
+          closed_question:
+            announcement: "Ennek a kérdésnek a válaszadása lezárult."
+            question: "Kérdés"
+            question_results: "Eredmények"
+          index:
+            empty_questions: "A találkozó során néhány kérdést küldünk, amelyekre válaszolhatsz. Itt fognak megjelenni."
+          index_admin:
+            edit: "Szerkesztés az adminisztrációs felületen"
+            question: "Kérdés"
+            received_response: "beérkezett válasz"
+            received_responses: "beérkezett válasz"
+            results: "Eredmények"
+            send: "Küldés"
+            sent: "Elküldve"
+            statuses:
+              closed: "Eredmények elküldve (lezárva)"
+              published: "Elküldve (nyitott)"
+              unpublished: "Küldésre vár"
+          published_question:
+            max_choices_alert: "Túl sok lehetőséget választottál ki"
+            question: "Kérdés"
+        responses:
+          index:
+            administrate: "Kezelés"
+            title: "Szavazás"
+          index_admin:
+            back_to_meeting: "Vissza a találkozóhoz"
+            title: "Szavazás kezelése"
+            view_poll: "Szavazás megtekintése"
+      public_participants_list:
+        hidden_participants_count:
+          one: "és még %{count} személy"
+          other: "és még %{count} személy"
+        show_less: "Kevesebb megjelenítése"
+        show_more: "Több megjelenítése"
+      registration_mailer:
+        confirmation:
+          registration_code: "A regisztrációs kódod: %{code}. Kérlek, mutasd meg az alábbi QR-kódot egy adminisztrátornak a részvételed igazolásához."
+      registrations:
+        waitlist:
+          invalid: "Probléma történt a várólistára való feliratkozás közben."
+          success: "Sikeresen felkerültél a találkozó várólistájára. Értesítünk, ha a regisztrációd sikeresen biztosítva lett."
+      withdraw:
+        error: "Probléma történt a találkozó visszavonása közben."
+        success: "A találkozót sikeresen visszavontad."
+    participatory_process_groups:
+      content_blocks:
+        extra_data:
+          developer_group: "Támogatja"
+          name: "Metaadatok"
+          participatory_scope: "Miről döntünk"
+          participatory_structure: "Hogyan döntünk"
+          target: "Kik vesznek részt"
+        html:
+          name: "HTML-blokk"
+        main_data:
+          name: "Cím és leírás"
+        participatory_processes:
+          active: "Aktív részvételi folyamatok"
+      related_processes:
+        help: "Az összes kiválasztott folyamat ehhez a csoporthoz lesz rendelve, azokat is beleértve, amelyek már más csoportokhoz tartoznak."
+    participatory_processes:
+      content_blocks:
+        democratic_quality_stats:
+          automatic_metrics:
+            description: "Ezeket a mutatókat a rendszer automatikusan nyeri a platform adataiból."
+            indicators:
+              hybridization: "Hibridizáció"
+              hybridization_tooltip: "Ez a mutató azt méri, hogy a folyamat során milyen mértékben ötvöződnek az online és az offline terek"
+              influence: "Polgári befolyás"
+              influence_tooltip: "Ez a mutató azt méri, hogy a polgárok milyen mértékben befolyásolták az elfogadott javaslatokat és a folyamat eredményeit."
+              traceability: "Nyomon követhetőség"
+              traceability_tooltip: "Ez a mutató a részvételi folyamat átláthatóságát és nyomon követhetőségét méri. Azt tükrözi, mennyire könnyen követhetik a résztvevők a javaslatok alakulását, és mennyire ellenőrizhetik az intézményi lépéseket a közzétett nyilvántartásokon keresztül."
+              transparency: "Reagálóképesség"
+              transparency_tooltip: "Ez a mutató azt méri, mennyire reagál a szervezet a résztvevők hozzájárulásaira. Azt tükrözi, hogyan vesz részt a hivatalos válaszokon és a megvalósított döntéseken keresztül."
+            name: "Automatikus mutatók"
+          global_score:
+            description_html: 'Az alábbiakban a részvételi folyamat demokratikus minőségének értékelésére használt mutatók láthatók. A kiszámításukról további részleteket a <a href="%{info_url}">demokratikus minőségi mutatókról szóló információs oldalon</a> találsz.'
+            name: "Összesített pontszám"
+            note: "*A jelzőértékeket 1-től 5-ig terjedő skálán mérjük, ahol az 1 a legalacsonyabb, az 5 a legmagasabb minőségi mutató."
+            tooltip: "Az összes dimenzió átlagaként számítva"
+          name: "Minőségi mutató"
+          qualitative_metrics:
+            description: "Ezeket a mutatókat a platform adminisztrátorai által kitöltött önértékelő kérdőív válaszaiból nyerjük."
+            indicators:
+              citizen_influence: "Polgári befolyás"
+              citizen_influence_tooltip: "Azt méri, mekkora hatásuk van a résztvevőknek a döntéshozatalra."
+              inclusiveness: "Befogadás"
+              inclusiveness_tooltip: "Azt értékeli, hogy a különböző érdekelt felek méltányosan képviseltetnek-e."
+              informativeness: "Tájékoztatottság"
+              informativeness_tooltip: "A folyamatban nyújtott világosság és információ szintjét méri."
+            name: "Önértékelési mutatók"
+        extra_data:
+          name: "Szakasz és időtartam"
+        hero:
+          name: "Főkép és cselekvésre ösztönző gomb"
+        related_processes:
+          name: "Kapcsolódó folyamatok"
+      last_activity:
+        new_participatory_process: "Új részvételi folyamat:"
+      pages:
+        home:
+          highlighted_processes:
+            active_spaces: "Aktív folyamatok"
+            see_all_spaces: "Összes folyamat megtekintése"
+      participatory_processes:
+        description:
+          area_name: "Terület"
+          data: "A folyamat adatai"
+          developer_group: "Támogató csoport"
+          local_area: "A szervezet területe"
+          meta_scope: "Hatókör"
+          participatory_scope: "Miről döntünk"
+          participatory_structure: "Hogyan döntünk"
+          target: "Kik vesznek részt"
+          title: "A folyamatról"
+        filters:
+          date: "Dátum"
+          type: "Típus"
+      static_pages:
+        democratic_quality_indicators:
+          content: |-
+            <h2>Mutatórendszer a demokratikus minőség méréséhez a Decidimben.</h2>
+
+            <h3>Bevezetés</h3>
+            <p>A demokratikus minőség a Decidim egyik alapelve. Ennek érvényesítése érdekében kidolgoztunk egy mutatórendszert, amely segít értékelni a platformon zajló részvételi folyamatok minőségét. Ez a cikk elmagyarázza, hogyan számítjuk ki ezeket a mutatókat.</p>
+
+            <h3>Hogyan számítjuk ki a mutatókat?</h3>
+            <p>A minőségi mutatók gyűjtésére két módszert határoztunk meg:</p>
+
+            <ol>
+              <li><strong>Automatikus mutatók:</strong> Ezeket közvetlenül a Decidim platform adataiból számítjuk.</li>
+              <li><strong>Önértékelő kérdések:</strong> Ezek egy adminisztrátor által kitöltött űrlapon alapulnak.</li>
+            </ol>
+
+            <p>Minden mutatót százalékban fejezünk ki (n/összes). Ezt a százalékot ezután 1-től 5-ig terjedő pontszámmá alakítjuk:</p>
+
+            <ul>
+              <li>1 = 0–20%</li>
+              <li>2 = 20–40%</li>
+              <li>3 = 40–60%</li>
+              <li>4 = 60–80%</li>
+              <li>5 = 80–100%</li>
+            </ul>
+
+            <br><br>
+            <h3>Automatikus mutatók</h3>
+            <p>Ezeket a mutatókat a Decidimben elérhető adatokból számítjuk ki automatikusan. Részvételi folyamatonként értékeljük őket, és az adminisztrátorok nyilvánossá tehetik őket, így minden résztvevő hozzáférhet.</p>
+
+            <p>Négy fő mutatót határoztunk meg: polgári befolyás, hibridizáció, reagálóképesség és nyomon követhetőség:</p>
+
+            <h3>Polgári befolyás</h3>
+
+            <p>Ez a mutató azt méri, hogy a polgárok milyen mértékben befolyásolták az elfogadott javaslatokat és a folyamat eredményeit.</p>
+
+            <ul>
+              <li>
+                Polgári befolyás a javaslatokra
+                <ul>
+                  <li>Az elfogadott javaslatok aránya (n/összes)</li>
+                  <li>Az elfogadott <em>polgári</em> javaslatok aránya az összes polgári javaslathoz képest (a jóváhagyott javaslatokra gyakorolt teljes polgári befolyás)</li>
+                  <li>Az elfogadott polgári javaslatok aránya az összes elfogadott javaslathoz képest (a jóváhagyott javaslatokra gyakorolt relatív polgári befolyás)</li>
+                </ul>
+              </li>
+              <li>
+                Polgári befolyás a kimenetekre/eredményekre
+                <ul>
+                  <li>A polgári javaslatokhoz kapcsolódó eredmények aránya az összes eredményhez képest (a kimenetekre gyakorolt teljes polgári befolyás)</li>
+                </ul>
+              </li>
+            </ul>
+
+            <h3>Hibridizáció</h3>
+
+            <p>Ez a mutató azt méri, hogy a folyamat során milyen mértékben ötvöződnek az online és az offline terek.</p>
+
+            <ul>
+              <li>Aktív a találkozó komponens? (Igen=5, Nem=0)</li>
+              <li>Vannak személyes találkozók? (Igen=5, Nem=0)</li>
+              <li>Vannak online találkozók? (Igen=5, Nem=0)</li>
+              <li>Vannak hibrid találkozók? (Igen=5, Nem=0)</li>
+              <li>Vannak találkozókból létrejött javaslatok? (Igen=5, Nem=0)</li>
+            </ul>
+
+            <h3>Reagálóképesség</h3>
+
+            <p>Ez a mutató azt méri, mennyire reagál a szervezet a résztvevők hozzájárulásaira. Azt tükrözi, hogyan vesz részt a hivatalos válaszokon és a megvalósított döntéseken keresztül.</p>
+
+            <ul>
+              <li>A megválaszolt javaslatok aránya (n/összes) – a javaslatokra adott intézményi reagálóképesség</li>
+              <li>A 100%-ban teljesült eredmények aránya (n/összes)</li>
+            </ul>
+
+            <h3>Nyomon követhetőség</h3>
+
+            <p>Ez a mutató a részvételi folyamat átláthatóságát és nyomon követhetőségét méri. Azt tükrözi, mennyire könnyen követhetik a résztvevők a javaslatok alakulását, és mennyire ellenőrizhetik az intézményi lépéseket a közzétett nyilvántartásokon keresztül.</p>
+
+            <ul>
+              <li>Előzménnyel rendelkező javaslatok száma (n/összes)</li>
+              <li>A javaslatokhoz kapcsolódó eredmények aránya (n/összes)</li>
+              <li>A közzétett jegyzőkönyvvel lezárt találkozók aránya (n/összes)</li>
+              <li>A nyílt adatok modul aktiválása (kétértékű: 0 vagy 5)</li>
+              <li>A költségvetésekhez kapcsolódó javaslatok aránya (n/összes)</li>
+            </ul>
+
+            <br><br>
+            <h3>Önértékelési mutatók</h3>
+
+            <p>Az automatikus mutatók mellett javasoljuk egy <strong>önértékelő űrlap</strong> használatát az egyes részvételi folyamatok minőségi dimenzióinak értékelésére. Ezt az űrlapot a platform adminisztrátorai töltik ki az egyes folyamatok végén, a válaszok pedig nyilvánosan megjelennek a mutatók tartalomblokkjában.</p>
+
+            <p>Ezek a kérdések a demokratikus minőségnek olyan szempontjait igyekeznek megragadni, amelyek csak mennyiségi adatokból nem értékelhetők. Fontos megjegyezni, hogy a kérdőív válaszait a platform adminisztrátorainak véleménye befolyásolja.</p>
+
+            <br><br>
+            <h3>Önértékelő kérdések</h3>
+
+            <p>Az alábbiakban találhatók az adminisztrátorok által megválaszolt önértékelő űrlap kérdései, valamint az egyes válaszokhoz tartozó értékek.</p>
+
+            <h4>Tájékoztatottság</h4>
+
+            <ol>
+              <li>A közzétett információ világosan bemutatja-e a döntéshozatali mechanizmusokat (pl. szavazás, konszenzus, közvetlen tárgyalások)?
+                <ul>
+                  <li>Nincs világosság = 0</li>
+                  <li>Alacsony világosság = 1</li>
+                  <li>Elegendő világosság = 2,5</li>
+                  <li>Teljes világosság = 5</li>
+                </ul>
+              </li>
+              <li>Tájékoztattak-e arról, hogy a résztvevők milyen mértékben befolyásolhatják a megvitatott témát (mind a folyamat kommunikációjában és a meghívókban, mind az egyes vitaülések elején)?
+                <ul>
+                  <li>Soha = 0</li>
+                  <li>Szinte soha = 1</li>
+                  <li>Általában = 2,5</li>
+                  <li>Mindig = 5</li>
+                </ul>
+              </li>
+            </ol>
+
+            <h4>Polgári befolyás</h4>
+
+            <ol>
+              <li>A folyamatban való részvétel mértékének értékelése
+                <ul>
+                  <li>A résztvevők információt kaptak a szervezettől. = 1</li>
+                  <li>A résztvevőket véleményeztetési jelleggel kérdezték meg, vagy visszajelzést adtak a szervezetnek. = 2</li>
+                  <li>A résztvevőket bevonták a döntéshozatali hatalom megosztásába. = 3</li>
+                  <li>A résztvevők meghatározó módon részt vettek a döntéshozatalban. = 4</li>
+                  <li>A résztvevők részt vettek a döntéshozatalban, valamint az erőforrások kezelésében vagy a megvalósításban. = 5</li>
+                </ul>
+              </li>
+              <li>A 0–5 polgári döntési beavatkozással rendelkező szakaszok aránya.
+                <p>A folyamat összes szakaszából (a témák kiválasztásától a végrehajtás felügyeletéig) hányban van lehetősége a nyilvánosságnak döntést hozni vagy végrehajtó lépést tenni?</p>
+                <ul>
+                  <li>0-20% = 1</li>
+                  <li>20-40% = 2</li>
+                  <li>40-60% = 3</li>
+                  <li>60-80% = 4</li>
+                  <li>80-100% = 5</li>
+                </ul>
+              </li>
+            </ol>
+
+            <h4>Befogadás</h4>
+
+            <ol>
+              <li>Hogyan értékelhető a szereplők és a résztvevők sokszínűségének foka a folyamat referencia-népességéhez képest?
+                <ul>
+                  <li>Egyáltalán nem = 0</li>
+                  <li>Alacsony = 1</li>
+                  <li>Elegendő = 2,5</li>
+                  <li>Jó = 5</li>
+                </ul>
+              </li>
+              <li>Hány nyelven kommunikálták a folyamatot?
+                <ul>
+                  <li>Egy nyelven = 1</li>
+                  <li>A közösségben beszélt nyelvek felénél kevesebben = 2,5</li>
+                  <li>A közösségben beszélt nyelvek felénél többön = 5</li>
+                </ul>
+              </li>
+              <li>Akadálymentesek voltak-e a személyes találkozók helyszínei a mozgáskorlátozott emberek számára?
+                <ul>
+                  <li>Nem = 0</li>
+                  <li>Részben = 2,5</li>
+                  <li>Igen = 5</li>
+                </ul>
+              </li>
+              <li>A részvételi alkalmakat változatos időpontokra tűzték-e ki (reggel, délben, délután, este és hétvégén)?
+                <ul>
+                  <li>Nem = 0</li>
+                  <li>Részben = 2,5</li>
+                  <li>Igen = 5</li>
+                </ul>
+              </li>
+              <li>Kaptak-e a résztvevők digitális támogatást?
+                <ul>
+                  <li>Nem = 0</li>
+                  <li>Részben = 2,5</li>
+                  <li>Igen = 5</li>
+                </ul>
+              </li>
+            </ol>
+          title: "Demokratikus minőségi mutatók"

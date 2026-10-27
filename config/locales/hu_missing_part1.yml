@@ -1,0 +1,498 @@
+hu:
+  activerecord:
+    models:
+      decidim:
+        accountability:
+          result:
+            budget_text: "Ez az eredmény bekerült: %{link}"
+            meetings_ids: "Megvitattuk ezen a találkozón: %{link}"
+            project_ids: "Bekerült ebbe a projektbe: %{link}"
+            proposal_ids: "Bekerült ebbe a javaslatba: %{link}"
+            text: "Hozzáadtuk ehhez az eredményhez: %{link}"
+        budgets:
+          project:
+            text: "Hozzáadtuk ehhez a költségvetéshez: %{link}"
+        history:
+          one: "Előzmény"
+          other: "Előzmények"
+        meetings:
+          meeting:
+            text: "Megvitattuk ezen a találkozón: %{link}"
+        proposals:
+          proposal:
+            budget_text: 'A javaslat <span class="resource-link">%{link} létrejött</span>'
+            import_from_proposal_text: "Ez a javaslat lett belőle: %{link}"
+            import_to_proposal_text: 'Ez a javaslat <span class="resource-link">%{link} létrejött</span>'
+            merge_from_proposal_text: "Ez a javaslat lett belőle: %{link}"
+            merge_to_proposal_text: "Ez a javaslat jött létre: %{link}"
+            split_from_proposal_text: "Ez a javaslat lett belőle: %{link}"
+            split_to_proposal_text: "Ez a javaslat jött létre: %{link}"
+      decidim/budgets/budget:
+        one: "Költségvetés"
+        other: "Költségvetések"
+      decidim/like:
+        one: "Kedvelés"
+        other: "Kedvelések"
+      decidim/surveys/survey_response:
+        one: "Válasz"
+        other: "Válaszok"
+    attributes:
+      decidim/user:
+        email: "E-mail-cím"
+  decidim:
+    accountability:
+      actions:
+        add_milestone: "Mérföldkő hozzáadása"
+        add_result: "Eredmény hozzáadása"
+        confirm_delete_result: "Biztosan törölni szeretnéd ezt az eredményt?"
+        deleted_results_info: "A törölt eredményeket a kukából lehet visszaállítani."
+        import: "Eredmények importálása másik komponensből"
+        new_milestone: "Új mérföldkő"
+        view_deleted_results: "Törölt eredmények megtekintése"
+      admin_log:
+        milestones:
+          create: "%{user_name} létrehozta a(z) %{resource_name} mérföldkövet"
+          delete: "%{user_name} törölte a(z) %{resource_name} mérföldkövet"
+          update: "%{user_name} módosította a(z) %{resource_name} mérföldkövet"
+        result:
+          restore: "%{user_name} visszaállította a(z) %{resource_name} eredményt a(z) %{space_name} térben"
+          soft_delete: "%{user_name} a kukába helyezte a(z) %{resource_name} eredményt a(z) %{space_name} térben"
+      creation:
+        text: "Az eredmény létrejött"
+      import_proposals_mailer:
+        import:
+          added_proposals:
+            one: "Egy eredmény importálva lett a javaslatokból"
+            other: "%{count} eredmény importálva lett a javaslatokból."
+          subject: "Sikeres javaslatimportálás"
+          success: "A javaslatok sikeresen importálva lettek eredményekként a(z) %{component_name} komponensben. Az eredményeket a felügyeleti felületen tekintheted át."
+      models:
+        milestone:
+          fields:
+            entry_date: "Dátum"
+            title: "Cím"
+        result:
+          fields:
+            taxonomies: "Taxonómiák"
+      results:
+        milestones:
+          title: "Mérföldkövek"
+        root_taxonomies:
+          title: "Megtekintés szerint:"
+    components:
+      accountability:
+        actions:
+          vote_comment: "Hozzászólás szavazása"
+        settings:
+          global:
+            clear_all: "Összes törlése"
+            comments_max_length: "Hozzászólásonkénti maximális karakterszám (0 = alapértelmezett érték)"
+            default_taxonomy: "Alapértelmezett taxonómia"
+            default_taxonomy_help: "Válaszd ki, melyik taxonómia jelenjen meg alapértelmezetten. Ha nincs kiválasztva taxonómia, az eredmények listában jelennek meg."
+            define_taxonomy_filters: "A beállítás használata előtt határozz meg néhány szűrőt ehhez a részvételi térhez."
+            geocoding_enabled: "Térképek engedélyezve"
+            no_taxonomy_filters_found: "Nem található taxonómiaszűrő."
+            taxonomy_filters: "Szűrők kiválasztása a komponenshez"
+            taxonomy_filters_add: "Szűrő hozzáadása"
+          visualization: "Megjelenítés"
+      blogs:
+        actions:
+          like: "Kedvelés"
+          vote_comment: "Hozzászólás szavazása"
+        settings:
+          global:
+            attachments_allowed: "Mellékletek engedélyezése"
+            comments_max_length: "Hozzászólásonkénti maximális karakterszám (0 = alapértelmezett érték)"
+            creation_enabled_for_participants: "A résztvevők létrehozhatnak bejegyzéseket"
+            define_taxonomy_filters: "A beállítás használata előtt határozz meg néhány szűrőt ehhez a részvételi térhez."
+            no_taxonomy_filters_found: "Nem található taxonómiaszűrő."
+            taxonomy_filters: "Szűrők kiválasztása a komponenshez"
+            taxonomy_filters_add: "Szűrő hozzáadása"
+          step:
+            likes_blocked: "Kedvelések letiltva"
+            likes_enabled: "Kedvelések engedélyezve"
+      budgets:
+        actions:
+          vote_comment: "Hozzászólás szavazása"
+        settings:
+          global:
+            clear_all: "Összes törlése"
+            comments_max_length: "Hozzászólásonkénti maximális karakterszám (0 = alapértelmezett érték)"
+            define_taxonomy_filters: "A beállítás használata előtt határozz meg néhány szűrőt ehhez a részvételi térhez."
+            geocoding_enabled: "Térképek engedélyezve"
+            no_taxonomy_filters_found: "Nem található taxonómiaszűrő."
+            taxonomy_filters: "Szűrők kiválasztása a komponenshez"
+            taxonomy_filters_add: "Szűrő hozzáadása"
+            voting_rule: "Szavazási szabály"
+            voting_rule_choices:
+              minimum_projects: "Szavazandó projektek minimális száma"
+              selected_projects: "Szavazandó projektek minimális és maximális száma"
+              threshold_percent: "Minimális költségvetési százalék"
+      add_comment_form:
+        account_message: "Jelentkezz be vagy hozz létre egy fiókot, hogy hozzászólhass."
+        add_comment: "Hozzászólás küldése"
+      comment:
+        comment_label: "%{comment_id}. hozzászólás"
+        comment_label_reply: "%{comment_id}. hozzászólás (válasz a(z) %{parent_comment_id}. hozzászólásra)"
+        controls_label: "Hozzászólás-vezérlők"
+        hide_replies:
+          one: "Válasz elrejtése"
+          other: "%{count} válasz elrejtése"
+        load_replies: "Válaszok betöltése"
+        replies_count:
+          one: "%{count} válasz"
+          other: "%{count} válasz"
+        show_replies:
+          one: "Válasz megjelenítése"
+          other: "%{count} válasz megjelenítése"
+        sort_by: "Rendezés: "
+      comments:
+        against: "Ellene"
+        blocked_comments_warning: "A hozzászólások jelenleg le vannak tiltva, csak az adminisztrátorok válaszolhatnak vagy írhatnak újat."
+        in_favor: "Mellette"
+        load_more_comments: "További hozzászólások betöltése"
+        no_comments_yet: "Még nincs hozzászólás"
+        top_comment_label: "Legtöbb tetszést kapott"
+      down_vote_button:
+        label:
+          one: "Nem tetszik gomb. Nem tetszik: %{count}"
+          other: "Nem tetszik gomb. Nem tetszik: %{count}"
+      up_vote_button:
+        label:
+          one: "Kedvelés gomb. Kedvelések: %{count}"
+          other: "Kedvelés gomb. Kedvelések: %{count}"
+      dummy:
+        settings:
+          global:
+            comments_max_length: "Hozzászólásonkénti maximális karakterszám"
+            define_taxonomy_filters: "A beállítás használata előtt határozz meg néhány szűrőt ehhez a részvételi térhez."
+            no_taxonomy_filters_found: "Nem található taxonómiaszűrő."
+            taxonomy_filters: "Szűrők kiválasztása a komponenshez"
+      pagination:
+        page_title: "%{component_name} – %{current_page}. oldal (összesen %{total_pages})"
+      debates:
+        actions:
+          create: "Vita létrehozása"
+          like: "Kedvelés"
+          vote_comment: "Hozzászólás szavazása"
+        settings:
+          global:
+            attachments_allowed: "Mellékletek engedélyezése"
+            clear_all: "Összes törlése"
+            comments_max_length: "Hozzászólásonkénti maximális karakterszám (0 = alapértelmezett érték)"
+            define_taxonomy_filters: "A beállítás használata előtt határozz meg néhány szűrőt ehhez a részvételi térhez."
+            no_taxonomy_filters_found: "Nem található taxonómiaszűrő."
+            taxonomy_filters: "Szűrők kiválasztása a komponenshez"
+            taxonomy_filters_add: "Szűrő hozzáadása"
+          step:
+            likes_blocked: "Kedvelések letiltva"
+            likes_enabled: "Kedvelések engedélyezve"
+      meetings:
+        actions:
+          reply_poll: "Szavazás megválaszolása"
+          vote_comment: "Hozzászólás szavazása"
+        settings:
+          global:
+            clear_all: "Összes törlése"
+            comments_max_length: "Hozzászólásonkénti maximális karakterszám (0 = alapértelmezett érték)"
+            define_taxonomy_filters: "A beállítás használata előtt határozz meg néhány szűrőt ehhez a részvételi térhez."
+            no_taxonomy_filters_found: "Nem található taxonómiaszűrő."
+            registration_code_enabled: "Regisztrációs kód és QR engedélyezve"
+            taxonomy_filters: "Szűrők kiválasztása a komponenshez"
+            taxonomy_filters_add: "Szűrő hozzáadása"
+      proposals:
+        actions:
+          comment: "Hozzászólás"
+          create: "Javaslat létrehozása"
+          like: "Kedvelés"
+          vote_comment: "Hozzászólás szavazása"
+        settings:
+          global:
+            attachments_allowed_help: "Ennek az opciónak az engedélyezésével a javaslatok alapértelmezetten rácsnézetben jelennek meg, és az első kép látszik majd a kártyán."
+            can_accumulate_votes_beyond_threshold: "A szavazatok a küszöbértéken túl is gyűjthetők"
+            clear_all: "Összes törlése"
+            collaborative_drafts_enabled_help: "Az együttműködő piszkozatok funkció megszűnik a Decidim 0.32-es verziójában. Az ezt használó szervezetek átválthatnak az új javaslat-társszerzőségi funkcióra."
+            comments_max_length: "Hozzászólásonkénti maximális karakterszám (0 = alapértelmezett érték)"
+            default_sort_order_help: "Az automatikus azt jelenti, hogy ha a szavazás engedélyezett, a javaslatok véletlenszerű sorrendben jelennek meg, ha pedig a szavazás le van tiltva, akkor a legtöbb szavazatot kapott javaslatok kerülnek előre."
+            default_sort_order_options:
+              automatic: "Automatikus"
+              most_commented: "Legtöbbet kommentelt"
+              most_followed: "Legtöbbet követett"
+              most_liked: "Legtöbbet kedvelt"
+              most_voted: "Legtöbb szavazatot kapott"
+              random: "Véletlenszerű"
+              recent: "Legfrissebb"
+              with_more_authors: "Több szerzővel"
+            define_taxonomy_filters: "A beállítás használata előtt határozz meg néhány szűrőt ehhez a részvételi térhez."
+            edit_time: "A szerzők ennyi ideig szerkeszthetik a javaslatokat"
+            edit_time_units:
+              days: "Nap"
+              hours: "Óra"
+              minutes: "Perc"
+            geocoding_enabled: "Térképek engedélyezve"
+            no_taxonomy_filters_found: "Nem található taxonómiaszűrő."
+            proposal_edit_time_unit_options:
+              days: "Nap"
+              hours: "Óra"
+              minutes: "Perc"
+            proposal_wizard_step_2_help_text: "A javaslatvarázsló „Közzététel” lépésének súgószövege"
+            taxonomy_filters: "Szűrők kiválasztása a komponenshez"
+            taxonomy_filters_add: "Szűrő hozzáadása"
+            vote_limit: "Szavazatkorlát résztvevőnként"
+          step:
+            default_sort_order_help: "Az automatikus azt jelenti, hogy ha a szavazás engedélyezett, a javaslatok véletlenszerű sorrendben jelennek meg, ha pedig a szavazás le van tiltva, akkor a legtöbb szavazatot kapott javaslatok kerülnek előre."
+            default_sort_order_options:
+              automatic: "Automatikus"
+              most_commented: "Legtöbbet kommentelt"
+              most_followed: "Legtöbbet követett"
+              most_liked: "Legtöbbet kedvelt"
+              most_voted: "Legtöbb szavazatot kapott"
+              random: "Véletlenszerű"
+              recent: "Legfrissebb"
+              with_more_authors: "Több szerzővel"
+            likes_blocked: "Kedvelések letiltva"
+            likes_enabled: "Kedvelések engedélyezve"
+      surveys:
+        actions:
+          respond: "Válaszadás"
+        name: "Kérdőívek"
+        settings:
+          announcement: "Közlemény"
+    download_your_data:
+      show:
+        result_comments: "Eredményekhez írt hozzászólások exportja"
+        results: "Eredmények exportja"
+        assemblies: "Gyűlések exportja"
+        projects: "Projektek exportja"
+        action: "Művelet"
+        download: "Fájl letöltése"
+        download_data: "Adatletöltés"
+        download_data_description_1: "Itt találod a fiókodhoz elérhető összes letöltést. Ezek a .zip fájlok két hétig érhetők el, utána törlődnek."
+        download_data_description_2: "Kérhetsz egy .zip fájlt a beküldéseidről és a személyes adataidról."
+        download_your_data: "Személyes adatok"
+        expiration: "Lejárat"
+        expired: "Már lejárt"
+        explanation:
+          body_1: "Ezek a fájlok a platformon végzett tevékenységedből exportált adatkészletek, például javaslatok vagy hozzászólások. Nyers, strukturált adatokat tartalmaznak, amelyeket elemzésre, kutatásra vagy más eszközökkel való integrációra használhatsz."
+          body_2: "Ezek a fájlok CSV (vesszővel tagolt értékek) formátumúak. Ez egy széles körben használt fájlformátum, amelyet számos szoftver meg tud nyitni és fel tud dolgozni, például táblázatkezelők, szövegszerkesztők és adatelemző eszközök."
+          title: "Mik ezek a fájlok?"
+        files_to_download: "Letölthető fájlok"
+        request_data: "Kérés"
+        type: "Letöltés típusa"
+        debate_comments: "Vitákhoz írt hozzászólások exportja"
+        debates: "Viták exportja"
+        responses: "Válaszok exportja"
+        survey_user_responses: "Kérdőívek felhasználói válaszai"
+        meeting_comments: "Találkozókhoz írt hozzászólások exportja"
+        meetings: "Találkozók exportja"
+        participatory_processes: "Részvételi folyamatok exportja"
+        proposal_comments: "Javaslatokhoz írt hozzászólások exportja"
+        proposals: "Javaslatok exportja"
+    open_data:
+      index:
+        description: "Üdvözlünk a(z) %{organization_name} nyílt adatok oldalán! Itt olyan adatfájlokat találsz, amelyek rendszeresen készülnek a(z) %{organization_name} különböző tanácskozási és irányítási folyamataiból. Ezeket a fájlokat az átláthatóság, a hozzáférhetőség és az együttműködés elősegítése érdekében tesszük közzé. Lentebb részletes információt találsz arról, mik ezek a fájlok, hogyan nyithatod meg és dolgozhatsz velük, valamint az egyes fájlok tartalmának és szerkezetének leírását."
+        detailed:
+          body_1: "Alább az egyes adatkészletek leírását találod, a sémájukkal (szerkezetükkel) és a tartalmazott információ típusával együtt:"
+          components: "Komponensek"
+          spaces: "Részvételi terek"
+          title: "Az egyes fájlok részletes magyarázata"
+        download:
+          components: "Komponensek"
+          core: "Alap"
+          spaces: "Részvételi terek"
+          title: "Erőforrások letöltése"
+        download_open_data: "Az összes nyílt adatfájl letöltése"
+        download_resource: "%{resource_name} letöltése CSV formátumban"
+        explanation:
+          body_1: "Ezek a fájlok a(z) %{organization_name} részvételi folyamataiból, például javaslatokból, hozzászólásokból és találkozókból exportált adatkészletek. Nyers, strukturált adatokat tartalmaznak, amelyeket elemzésre, kutatásra vagy más eszközökkel való integrációra használhatsz. Az adatok 24 óránként automatikusan frissülnek, így mindig a legfrissebb információhoz férhetsz hozzá."
+          body_2: "Ezek a fájlok CSV (vesszővel tagolt értékek) formátumúak. Ez egy széles körben használt fájlformátum, amelyet számos szoftver meg tud nyitni és fel tud dolgozni, például táblázatkezelők, szövegszerkesztők és adatelemző eszközök."
+          title: "Mik ezek a fájlok?"
+        how_to:
+          step_1:
+            body_html: "Kattints az alább található hivatkozásokra, hogy letöltsd a CSV-fájlokat a számítógépedre."
+            title: "1. Töltsd le a fájlokat"
+          step_2:
+            body_html: |-
+              <ul>
+                <li><b>Táblázatkezelő alkalmazások</b>: A CSV-fájlokat megnyithatod olyan alkalmazásokkal, mint a Microsoft Excel, a Google Táblázatok vagy a LibreOffice Calc. Nyisd meg az alkalmazást, válaszd a Fájl menü „Megnyitás” pontját, majd a letöltött CSV-fájlt.</li>
+                <li><b>Szövegszerkesztők</b>: A CSV-fájlok bármelyik szövegszerkesztőben megnyithatók, például a Jegyzettömbben vagy a Sublime Textben. Ilyenkor a nyers adatok látszanak: minden sor egy rekord, az értékeket pedig vessző választja el.</li>
+                <li><b>Adatelemző eszközök</b>: Ha ismered az olyan adatelemző eszközöket, mint a Python (pandas), az R vagy az SQL-adatbázisok, a CSV-fájlokat közvetlenül importálhatod feldolgozásra és elemzésre.</li>
+              </ul>
+            title: "2. Nyisd meg a fájlokat"
+          step_3:
+            body_html: |-
+              <ul>
+                <li><b>Szűrés és rendezés</b>: A táblázatkezelő alkalmazásokban szűrheted és rendezheted az adatokat, hogy egy-egy részhalmazra összpontosíts.</li>
+                <li><b>Elemzés</b>: Használd az adatokat különféle elemzésekhez, például a javaslatok számának megszámolásához, a hozzászólások trendjeinek vizsgálatához vagy a találkozókon való részvétel értékeléséhez.</li>
+                <li><b>Vizualizáció</b>: Készíthetsz diagramokat, grafikonokat és más vizualizációkat, amelyek segítenek az adatok értelmezésében.</li>
+              </ul>
+            title: "3. Dolgozz az adatokkal"
+          title: "Hogyan nyisd meg a fájlokat és dolgozz velük"
+        license:
+          body_1_html: "A(z) %{organization_name} adatbázisa a(z) %{link_database} alatt érhető el. Az adatbázis egyes tartalmaira vonatkozó jogokat a(z) %{link_contents} licencelja."
+          license_contents_link: "https://opendatacommons.org/licenses/dbcl/1.0/"
+          license_contents_name: "Adatbázis-tartalmi licenc"
+          license_database_link: "https://opendatacommons.org/licenses/odbl/1.0/"
+          license_database_name: "Nyílt adatbázis-licenc"
+          title: "Licenc"
+        title: "Nyílt adatok"
+    statistics:
+      results_count_tooltip: "Az ebből a térből származó döntések vagy eredmények száma."
+      assemblies_count_tooltip: "A nyilvános gyűlések száma, ahol kollektív döntések születnek."
+      posts_count_tooltip: "A közzétett frissítések vagy blogbejegyzések száma."
+      projects_count: "Költségvetések"
+      projects_count_tooltip: "A részvételi költségvetési projektek száma és a rájuk leadott szavazatok összesen."
+      comments_count_tooltip: "Az ebben a térben írt hozzászólások összesített száma."
+      followers_count_tooltip: "Azoknak a felhasználóknak a száma, akik a tér bármely részét követik, hogy értesüljenek a változásokról."
+      likes_count: "Kedvelések"
+      participants_count_tooltip: "Azon egyedi felhasználók száma, akik aktívak voltak ebben a térben: javaslatot nyújtottak be, találkozón vettek részt, szavaztak vagy vitákban vettek részt."
+      surveys_count: "Kérdőívek"
+      users_count_tooltip: "Azoknak a felhasználóknak az összesített száma, akik regisztráltak és e-mailben megerősítették a fiókjukat."
+      debates_count_tooltip: "A lezajlott viták száma."
+      attendees_count: "Találkozók résztvevői"
+      meetings_count_tooltip: "A megtartott találkozók száma, az online és a személyes találkozókat is beleértve."
+      participatory_space_meetings_count: "Találkozók"
+      processes_count_tooltip: "A nyilvánosan elérhető részvételi folyamatok száma."
+      participatory_space_proposals_count: "Javaslatok"
+      proposals_accepted: "Elfogadott javaslatok"
+      proposals_count_tooltip: "A beküldött javaslatok száma és a rájuk leadott szavazatok összesen."
+      votes: "Szavazatok:"
+      responses: "Válaszok:"
+      responses_count: "Válaszok"
+      surveys_count_tooltip: "Az elérhető kérdőívek száma és a begyűjtött válaszok."
+    api:
+      errors:
+        introspection_disabled: "Ennél a kérésnél az introspekció le van tiltva"
+        invalid_locale: "Érvénytelen nyelvi beállítás"
+        locale_argument_error: "Hiba történt az i18n-adatok belső kezelése közben"
+        not_found: "%{type} nem található"
+        permission_not_set: "Ehhez a(z) %{type} típushoz nincs jogosultság beállítva"
+        recursion_limit_exceeded_error: "Túl sok rekurziót észleltünk a lekérdezésben"
+        too_many_aliases_error: "Túl sok aliast használtál. %{size} aliast használtál, de legfeljebb %{limit} engedélyezett."
+        unauthorized_field: "Nem tekintheted meg és nem szerkesztheted a(z) %{field} mezőt a(z) %{type} típuson, mert nincs hozzá jogosultságod"
+        unauthorized_mutation: "Nincs jogosultságod ennek a módosításnak a végrehajtásához"
+        unauthorized_object: "Nem tekintheted meg és nem szerkesztheted ezt a(z) %{type} típust, mert nincs hozzá jogosultságod"
+    admin_log:
+      assembly:
+        publish_all_members: "%{user_name} közzétette a(z) %{resource_name} gyűlés összes tagját"
+        restore: "%{user_name} visszaállította a(z) %{resource_name} gyűlést"
+        soft_delete: "%{user_name} a kukába helyezte a(z) %{resource_name} gyűlést"
+        unpublish_all_members: "%{user_name} visszavonta a(z) %{resource_name} gyűlés összes tagjának közzétételét"
+      component:
+        restore: "%{user_name} visszaállította a(z) %{resource_name} komponenst a(z) %{space_name} térben"
+        soft_delete: "%{user_name} a kukába helyezte a(z) %{resource_name} komponenst a(z) %{space_name} térben"
+      member:
+        create: "%{user_name} meghívta %{resource_name} résztvevőt tagnak"
+        create_via_csv: "%{user_name} CSV-n keresztül meghívta %{resource_name} résztvevőt tagnak"
+        delete: "%{user_name} eltávolította %{resource_name} résztvevőt a tagok közül"
+      moderation:
+        bulk_hide: "%{user_name} elrejtett %{reported_count} erőforrást"
+        bulk_unhide: "%{user_name} újra megjelenített %{reported_count} erőforrást"
+        bulk_unreport: "%{user_name} visszavonta %{reported_count} erőforrás bejelentését"
+      share_token:
+        create: "%{user_name} hozzáférési linket hozott létre a(z) %{space_name} térben"
+        create_with_space: "%{user_name} hozzáférési linket hozott létre a(z) %{resource_name} számára a(z) %{space_name} térben"
+        delete: "%{user_name} törölt egy hozzáférési linket a(z) %{space_name} térben"
+        delete_with_space: "%{user_name} törölte a(z) %{resource_name} hozzáférési linkjét a(z) %{space_name} térben"
+        update: "%{user_name} módosított egy hozzáférési linket a(z) %{space_name} térben"
+        update_with_space: "%{user_name} módosította a(z) %{resource_name} hozzáférési linkjét a(z) %{space_name} térben"
+      taxonomy:
+        create: "%{user_name} létrehozta a(z) %{resource_name} taxonómiát"
+        create_with_parent: "%{user_name} létrehozta a(z) %{resource_name} taxonómiát a(z) %{parent_taxonomy} taxonómián belül"
+        delete: "%{user_name} törölte a(z) %{resource_name} taxonómiát"
+        delete_with_parent: "%{user_name} törölte a(z) %{resource_name} taxonómiát a(z) %{parent_taxonomy} taxonómián belül"
+        update: "%{user_name} módosította a(z) %{resource_name} taxonómiát"
+        update_with_parent: "%{user_name} módosította a(z) %{resource_name} taxonómiát a(z) %{parent_taxonomy} taxonómián belül"
+      taxonomy_filter:
+        create: "%{user_name} létrehozta a(z) %{resource_name} szűrőt"
+        create_with_filter_info: "%{user_name} létrehozta a(z) %{resource_name} szűrőt a(z) „%{taxonomy_name}” taxonómia alapján, %{filter_items_count} elemmel"
+        delete: "%{user_name} törölte a(z) %{resource_name} szűrőt"
+        delete_with_filter_info: "%{user_name} törölte a(z) %{resource_name} szűrőt, amely a(z) „%{taxonomy_name}” taxonómián alapult, %{filter_items_count} elemmel"
+        update: "%{user_name} módosította a(z) %{resource_name} szűrőt"
+        update_with_filter_info: "%{user_name} módosította a(z) %{resource_name} szűrőt a(z) „%{taxonomy_name}” taxonómia alapján, %{filter_items_count} elemmel"
+      user:
+        bulk_block: "%{user_name} letiltott %{blocked_count} felhasználót"
+        bulk_ignore: "%{user_name} visszavonta %{unreported_users_count} felhasználó bejelentését"
+        bulk_unblock: "%{user_name} feloldotta %{unblocked_count} felhasználó tiltását"
+      user_group:
+        bulk_block: "%{user_name} letiltott %{blocked_count} felhasználót"
+        bulk_ignore: "%{user_name} visszavonta %{unreported_users_count} felhasználó bejelentését"
+        bulk_unblock: "%{user_name} feloldotta %{unblocked_count} felhasználó tiltását"
+      participatory_process:
+        publish_all_members: "%{user_name} közzétette a(z) %{resource_name} részvételi folyamat összes tagját"
+        restore: "%{user_name} visszaállította a(z) %{resource_name} részvételi folyamatot"
+        soft_delete: "%{user_name} a kukába helyezte a(z) %{resource_name} részvételi folyamatot"
+        unpublish_all_members: "%{user_name} visszavonta a(z) %{resource_name} részvételi folyamat összes tagjának közzétételét"
+      participatory_process_group:
+        unpublish: "%{user_name} visszavonta a(z) %{resource_name} részvételi folyamatcsoport közzétételét"
+    blogs:
+      actions:
+        confirm_delete_post: "Biztosan törölni szeretnéd ezt a bejegyzést?"
+        deleted_posts_info: "A törölt bejegyzéseket a kukából lehet visszaállítani."
+        view_deleted_posts: "Törölt bejegyzések megtekintése"
+      admin_log:
+        post:
+          restore: "%{user_name} visszaállította a(z) %{resource_name} blogbejegyzést a(z) %{space_name} térben"
+          soft_delete: "%{user_name} a kukába helyezte a(z) %{resource_name} blogbejegyzést a(z) %{space_name} térben"
+      models:
+        post:
+          fields:
+            taxonomies: "Taxonómiák"
+      posts:
+        edit:
+          add_attachments: "Mellékletek hozzáadása"
+          attachment_legend: "Dokumentum vagy kép hozzáadása"
+          back: "Vissza a bejegyzéshez"
+          button: "Frissítés"
+          edit_attachments: "Mellékletek szerkesztése"
+          title: "Bejegyzés szerkesztése"
+        form:
+          author_id: "Szerző"
+          body: "Szöveg"
+          title: "Cím"
+        index:
+          count:
+            one: "%{count} bejegyzés"
+            other: "%{count} bejegyzés"
+          new_post: "Új bejegyzés"
+        menu_actions:
+          button_destroy: "Bejegyzés törlése"
+          button_destroy_confirm: "Biztosan törölni szeretnéd ezt a bejegyzést?"
+          button_edit: "Bejegyzés szerkesztése"
+        new:
+          back: "Vissza a bejegyzésekhez"
+          button: "Létrehozás"
+          title: "Új bejegyzés létrehozása"
+    budgets:
+      actions:
+        confirm_delete_budget: "Biztosan törölni szeretnéd ezt a költségvetést?"
+        confirm_delete_project: "Biztosan törölni szeretnéd ezt a projektet?"
+        deleted_budgets_info: "A törölt költségvetéseket a kukából lehet visszaállítani."
+        edit_projects: "Projektek hozzáadása"
+        view_deleted_budgets: "Törölt költségvetések megtekintése"
+        view_deleted_projects: "Törölt projektek megtekintése"
+      admin_log:
+        budget:
+          restore: "%{user_name} visszaállította a(z) %{resource_name} költségvetést a(z) %{space_name} térben"
+          soft_delete: "%{user_name} a kukába helyezte a(z) %{resource_name} költségvetést a(z) %{space_name} térben"
+        project:
+          restore: "%{user_name} visszaállította a(z) %{resource_name} projektet a(z) %{space_name} térben"
+          soft_delete: "%{user_name} a kukába helyezte a(z) %{resource_name} projektet a(z) %{space_name} térben"
+      budget_information_modal:
+        more_information: "További információ a költségvetésről"
+      budgets_list:
+        completed: "Befejezett"
+        count:
+          one: "%{count} költségvetés"
+          other: "%{count} költségvetés"
+        empty: "Még nincsenek költségvetések"
+        incomplete: "Befejezetlen"
+        orders:
+          highest_cost: "Legmagasabb költség"
+          label: "Költségvetések rendezése"
+          lowest_cost: "Legalacsonyabb költség"
+          random: "Véletlenszerű sorrend"
+        see_projects: "Projektek megtekintése"
+        see_results: "Eredmények megtekintése"
+      creation:
+        text: "Hozzáadva ehhez a költségvetéshez"
