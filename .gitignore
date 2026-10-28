@@ -50,3 +50,7 @@
 
 # Ignore Tailwind configuration
 tailwind.config.js
+
+# Personal Claude Code notes (not committed)
+CLAUDE.local.md
+core-hu.yml

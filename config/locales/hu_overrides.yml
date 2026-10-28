@@ -3,7 +3,37 @@ hu:
     extensions:
       link:
         targets:
-          default: "Alapértelmezett (ugyanaz a lap)"
+          default: Alapértelmezett (ugyanaz a lap)
     toolbar:
       textStyle:
-        heading: "Címsor %level%"
+        heading: Címsor %level%
+  decidim:
+    devise:
+      registrations:
+        new:
+          log_in: Jelentkezz be!
+          newsletter_title: Feliratkozás a hírlevélre
+          terms: szolgáltatási feltételeket
+          username_help: Bejegyzésekben megjelenő nyilvános megnevezés. Az anonimitás megőrzése érdekében bármilyen név lehet, de később szavazni csak ellenőrzött névvel lehet.
+    authorization_modals:
+      content:
+        unconfirmed:
+          confirmation_instructions: 'Ha még nem kaptad meg a megerősítési utasítást, újra kérheti őket:'
+          explanation_html: Annak érdekében, hogy ezt a műveletet elvégezhessed, engedélyezned kell, mielőtt ezt elvégeznéd, meg kell erősítenie az e-mail címét <strong>%{email}</strong>.
+  layouts:
+    decidim:
+      data_consent:
+        warning:
+          consent_required: A tartalom megtekintéséhez engedélyezni kell a %{categories}.
+          all_categories: összes sütit
+        dialog:
+          description: Weboldalunkon sütiket használunk a weboldal teljesítményének és tartalmának javítása érdekében. A sütik lehetővé teszik számunkra, hogy személyre szabottabb felhasználói élményt és tartalmat nyújtsunk a közösségi média csatornáinkról.
+  devise:
+    shared:
+      links:
+        didn_t_receive_confirmation_instructions: Nem kaptad meg a megerősítő instrukciókat?
+        didn_t_receive_unlock_instructions: Nem kaptad meg a feloldáshoz szükséges instrukciókat?
+        forgot_your_password: Elfelejtetted a jelszavad?
+    sessions:
+      already_signed_out: Sikeresen kijelentkeztél.
+      signed_out: Sikeresen kijelentkeztél.

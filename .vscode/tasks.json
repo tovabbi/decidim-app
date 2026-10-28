@@ -1,0 +1,23 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "Watch core-hu.yml",
+      "detail": "Copies every edit in core-hu.yml to config/locales/hu_overrides.yml on save",
+      "type": "process",
+      "command": "ruby",
+      "args": ["--disable-gems", "script/sync_hu_overrides.rb", "--watch"],
+      "isBackground": true,
+      "runOptions": { "runOn": "folderOpen" },
+      "presentation": { "reveal": "silent", "panel": "dedicated" },
+      "problemMatcher": []
+    },
+    {
+      "label": "Sync core-hu.yml once",
+      "type": "process",
+      "command": "ruby",
+      "args": ["--disable-gems", "script/sync_hu_overrides.rb"],
+      "problemMatcher": []
+    }
+  ]
+}
