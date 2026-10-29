@@ -115,16 +115,16 @@ hu:
             other: "Szavazat"
         voting_rules:
           already_vote:
-            description: "Ne feledd, még %{number} támogatást kell adnod különböző javaslatokra, hogy a támogatásaidat figyelembe vegyük."
+            description: "Ne feledd, még %{number} szavazatot kell adnod különböző javaslatokra, hogy a szavazataidat figyelembe vegyük."
             see_other_proposals: "Más javaslatok megtekintése"
-            title: "Még %{number} támogatásod van hátra"
+            title: "Még %{number} szavazatod van hátra"
           can_accumulate_votes_beyond_threshold:
-            description: "Minden javaslat több mint %{limit} szavazatot is összegyűjthet"
+            description: "Egy javaslat összegyűjthet %{limit}-nál is több szavazatot"
           minimum_votes_per_user:
-            description: "Legalább %{votes} támogatást kell megosztanod különböző javaslatok között, hogy a támogatásaidat figyelembe vegyük."
+            description: "Legalább %{votes} szavazatot kell tenned egy javaslatra, hogy a szavazataidat figyelembe vegyük."
           success: "A szavazataidat sikeresen elfogadtuk"
           threshold_per_proposal:
-            description: "Ahhoz, hogy egy javaslat érvényes legyen, el kell érnie a(z) %{limit} szavazatot."
+            description: "Ahhoz, hogy egy javaslat támogatott legyen, el kell érnie a(z) %{limit} szavazatot."
           title: "Részvételi szabályok"
           vote_limit:
             votes: "Még %{number} szavazat van hátra"

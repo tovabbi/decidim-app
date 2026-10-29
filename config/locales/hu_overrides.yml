@@ -22,8 +22,9 @@ hu:
           explanation_html: Annak érdekében, hogy ezt a műveletet elvégezhessed, engedélyezned kell, mielőtt ezt elvégeznéd, meg kell erősítenie az e-mail címét <strong>%{email}</strong>.
     newsletter_mailer:
       newsletter:
-        no_reply_notice: Ez az e-mail egy olyan e-mail címről érkezett, amely nem tud fogadni e-maileket, csak értesítésre használható. Kérjük, ne válaszoljon erre az üzenetre.
+        no_reply_notice: Ez az e-mail egy olyan e-mail címről érkezett, amely nem tud fogadni e-maileket, csak értesítésre használható. Kérjük, ne válaszolj erre az üzenetre.
         unsubscribe: 'Az ilyen e-mailek fogadásának kikapcsolása: <a href="%{link}" target="_blank" class="unsubscribe">Leiratkozás</a>.'
+        note: Azért kaptad ezt az e-mailt, mert feliratkoztál a(z) %{organization_name} hírleveleire. A beállításokat az <a href="%{link}">értesítések oldalon</a> módosíthatja.
     events:
       email_event:
         email_greeting: Szia %{user_name}!
@@ -48,3 +49,6 @@ hu:
     sessions:
       already_signed_out: Sikeresen kijelentkeztél.
       signed_out: Sikeresen kijelentkeztél.
+    mailer:
+      confirmation_instructions:
+        greeting: Szia %{recipient}!
