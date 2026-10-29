@@ -70,6 +70,12 @@ Rails.application.configure do
   # Set host to be used by links generated in mailer templates.
   # config.action_mailer.default_url_options = { host: "example.com" }
 
+  # Build https links and image URLs in emails; the host comes from each organization.
+  config.action_mailer.default_url_options = { protocol: "https" }
+  config.after_initialize do
+    Rails.application.routes.default_url_options[:protocol] = "https"
+  end
+
   # Specify outgoing SMTP server. Remember to add smtp/* credentials via bin/rails credentials:edit.
   # config.action_mailer.smtp_settings = {
   #   user_name: Rails.application.credentials.dig(:smtp, :user_name),

@@ -1,0 +1,10 @@
+<%# Official and contact data at the bottom of every email (mailer and newsletter_base layouts) %>
+<% if @organization %>
+  <center>
+    A Verőce Decidim egy transzparens, nonprofit civil kezdeményezés.<br>
+    Kapcsolat: <%= mail_to "veroce@kanyarulat.hu" %><br>
+    <%= link_to "Adatkezelési tájékoztató", decidim.page_url("gdpr", host: @organization.host) %>
+    &middot;
+    <%= link_to "ÁSZF", decidim.page_url("terms-of-service", host: @organization.host) %>
+  </center>
+<% end %>
