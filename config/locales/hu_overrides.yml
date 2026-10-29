@@ -20,6 +20,17 @@ hu:
         unconfirmed:
           confirmation_instructions: 'Ha még nem kaptad meg a megerősítési utasítást, újra kérheti őket:'
           explanation_html: Annak érdekében, hogy ezt a műveletet elvégezhessed, engedélyezned kell, mielőtt ezt elvégeznéd, meg kell erősítenie az e-mail címét <strong>%{email}</strong>.
+    newsletter_mailer:
+      newsletter:
+        no_reply_notice: Ez az e-mail egy olyan e-mail címről érkezett, amely nem tud fogadni e-maileket, csak értesítésre használható. Kérjük, ne válaszoljon erre az üzenetre.
+        unsubscribe: 'Az ilyen e-mailek fogadásának kikapcsolása: <a href="%{link}" target="_blank" class="unsubscribe">Leiratkozás</a>.'
+    events:
+      email_event:
+        email_greeting: Szia %{user_name}!
+      gamification:
+        badge_earned:
+          email_intro: 'Szép munka! Megszerezted a(z) <a href="%{resource_url}">%{badge_name} jelvényt</a> (szint: %{current_level}).'
+          email_subject: 'Új jelvényt szereztél: %{badge_name}!'
   layouts:
     decidim:
       data_consent:
