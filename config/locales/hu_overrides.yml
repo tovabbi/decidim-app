@@ -9,6 +9,11 @@ hu:
         heading: Címsor %level%
   decidim:
     devise:
+      omniauth_registrations:
+        create:
+          email_already_exists: Nem sikerült létrehozni a fiókot. Ellenőrizd a megadott adatokat (például a becenevet), vagy lehet, hogy ezzel az email címmel már létezik fiók.
+        new:
+          nickname_help: A beceneved itt %{organization} csak betűket, számokat '-' és '_' jeleket tartalmazhat. Ha üresen hagyod, a neved alapján hozzuk létre.
       registrations:
         new:
           log_in: Jelentkezz be!
