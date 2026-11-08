@@ -15,7 +15,10 @@ RUN ARCH="$(dpkg --print-architecture | sed 's/amd64/x64/')" \
 WORKDIR /app
 ENV RAILS_ENV=production \
     RAILS_SERVE_STATIC_FILES=true \
-    RAILS_LOG_TO_STDOUT=true
+    RAILS_LOG_TO_STDOUT=true \
+    DECIDIM_EXPIRE_SESSION_AFTER=20160
+# DECIDIM_EXPIRE_SESSION_AFTER is the idle session timeout in minutes (20160 = 14 days).
+# It is a default only: a Coolify environment variable with the same name overrides it.
 
 COPY Gemfile Gemfile.lock ./
 RUN bundle install
