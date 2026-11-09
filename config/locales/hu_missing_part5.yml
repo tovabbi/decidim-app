@@ -431,11 +431,11 @@ hu:
   datetime:
     distance_in_words:
       less_than_x_minutes:
-        one: "kevesebb mint egy perc"
-        other: "kevesebb mint %{count} perc"
+        one: "kevesebb mint egy perce"
+        other: "kevesebb mint %{count} perce"
       less_than_x_seconds:
-        one: "kevesebb mint 1 másodperc"
-        other: "kevesebb mint %{count} másodperc"
+        one: "kevesebb mint 1 másodperce"
+        other: "kevesebb mint %{count} másodperce"
       short:
         about_x_days: "%{count} n"
         about_x_hours: "%{count} ó"
@@ -454,14 +454,14 @@ hu:
         x_seconds: "%{count} mp"
         x_years: "%{count} é"
       x_minutes:
-        one: "1 perc"
-        other: "%{count} perc"
+        one: "1 perce"
+        other: "%{count} perce"
       x_months:
-        one: "1 hónap"
-        other: "%{count} hónap"
+        one: "1 hónapja"
+        other: "%{count} hónapja"
       x_seconds:
-        one: "1 másodperc"
-        other: "%{count} másodperc"
+        one: "1 másodperce"
+        other: "%{count} másodperce"
     widget:
       label:
         date: "Dátum kiválasztása: %{label}"
